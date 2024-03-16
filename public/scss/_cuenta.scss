@@ -1,0 +1,507 @@
+h4.seccionador {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: $verde-principal;
+    line-height: 2.7rem;
+    margin-bottom: 0.875rem;
+	
+	@include breakpoint(large) {
+		&.text-left {
+			text-align: left;
+			margin-left: 0.5rem;
+		}
+	}
+}
+
+.lateral-cuenta {
+	border-right: dotted 1px $verde-principal;
+}
+
+ul.lateral {
+	
+	>li {
+		
+		>a {
+			color: $notblack;
+			font-size: 1rem;
+			@include breakpoint(medium) {
+				border-radius: 3px;
+			}
+			@include transition(background 0.2s, color 0.2s, text-shadow 0.2s);
+			
+			>i {
+				width: 1.2rem;
+				color: $azul-principal;
+				@include transition(background 0.2s, color 0.2s, text-shadow 0.2s);
+			}
+			
+			&:hover, &.active {
+				background: $naranja-principal;
+				color: $white;
+				@include reg-shadow();
+				
+				>i {
+					color: $white;
+					@include reg-shadow();
+				}
+			}
+		}
+	}
+}
+
+.oculto-lateral {
+
+	margin-top: 1rem;
+	
+	.off-canvas {
+		background: $white;
+		box-shadow: none;
+	}
+	
+	.off-canvas-content {
+		min-height: 310px;
+	}
+	
+	.title-bar {
+		background: $azul-principal;
+	}
+}
+
+.form-cuenta {
+    border: solid 1px lighten($verde-mediano, 30%);
+    margin: 1.2rem 0.5rem;
+	@include breakpoint(medium) {
+		margin-top: 0;
+	}
+    border-radius: 3px;
+    padding: 0.7rem 0.9rem;
+	
+	.button {
+		margin-top: 1rem;
+	}
+	
+}
+
+.button {
+		
+	&.guardar {
+		background: $verde-oscuro;
+		
+		&:hover {
+			background: darke($verde-oscuro, 10%);
+		}
+	}
+	
+	*.cancelar {
+		background: $light-gray;
+		
+		&:hover {
+			background: darke($light-gray, 10%);
+		}
+	}
+}
+
+.callout {
+	border-radius: 3px;
+	
+	&.success {
+		>p {
+			color: $verde-oscuro;
+			padding: 0.2rem 0.2rem 0;
+			font-size: 0.9rem;
+		}
+	}
+	
+	&.alert {
+		>p {
+			color: $naranja-oscuro;
+			padding: 0.2rem 0.2rem 0;
+			font-size: 0.9rem;
+		}
+	}
+}
+
+hr.dashed {
+    border-style: dashed;
+	border-color: $verde-mediano;
+}
+
+.direccion {
+
+	span {
+		color: $notblack;
+	}
+	
+	span:not(.identi) {
+		font-size: 0.9rem;
+	}
+
+	.identi {
+		color: $azul-principal;
+		border-bottom: dashed 1px $light-gray;
+		display: block;
+		margin-bottom: 0.6rem;
+		line-height: 1.6rem;
+	}
+	
+	.linea1, .linea2, .codigo_postal {
+		display: block;
+	}
+	
+	.bar {
+		border-top: dashed 1px $light-gray;
+		margin-top: 0.6rem;
+		padding: 0.2rem 0.4rem 0;
+		
+		a {
+			display: inline-block;
+			font-size: 0.9rem;
+			line-height: 1.6rem;
+			padding-top: 0.3rem;
+			
+			&.editar_direccion, &.editar_facturacion {
+				color: $verde-oscuro;
+			}
+			
+			&.borrar_direccion, &.borrar_facturacion {
+				color: $naranja-oscuro;
+			}
+		}
+	}
+}
+
+#datos {
+	&.campanas-cuenta {
+		position: relative;
+		
+		thead {
+			tr {
+				th {
+					padding: 0.6rem 0.4rem;
+				}
+			}
+		}
+		
+		tbody {
+			tr:nth-child(even) {
+				background: #F5F5F5
+			}
+		}
+		
+		#imagen-campana {
+			width: 80px;
+			@include breakpoint(small only) {
+				width: 50px;
+				padding: 0;
+				
+				>span {
+					display: none;
+				}
+			}
+		}
+		
+		#tiempo-restante {
+			width: 34%;
+		}
+		
+		#avance-campana {
+			width: 34%;
+		}
+		
+		tbody {
+			tr {
+				td {
+					padding: 0.4rem;
+				}
+			}
+		}
+		
+		p {
+			font-size: 0.7rem;
+			font-weight: normal;
+			color: $dark-gray;
+		}
+		
+		h5 {
+			font-size: 0.8rem;
+			font-weight: bold;
+			color: $notblack;
+			margin: 0 0;
+			padding: 0.3rem 0;
+			
+			a {
+				color: $notblack;
+			}
+		}
+		
+		.tipo-campana {
+			font-weight: normal;
+			display: block;
+			text-align: center;
+			font-size: 0.7rem;
+			color: $dark-gray;
+			margin-bottom: 0.6rem
+		}
+		
+		.data-title {
+			display: block;
+			font-size: 0.7rem;
+			text-transform: uppercase;
+			font-weight: normal;
+			text-align: center;
+			color: $azul-mediano;
+			margin-top: 0.7rem;
+		}
+		
+		.data-info {
+			font-size: 0.9rem;
+			display: block;
+			text-align: center;
+			font-weight: bold;
+			color: $notblack;
+			@include breakpoint(medium) {
+				margin-bottom: 0.7rem;
+			}
+		}
+		
+		.timer {
+			border: none;
+			
+			.f {
+				.d_digit {
+					@include breakpoint(medium only) {
+						padding: 0;
+						min-width: 0;
+					}
+				}
+			}
+		}
+		
+		.estatus-campana {
+			font-size: 0.9rem;
+			font-weight: normal;
+			text-align: center;
+			display: block;
+			color: $notblack;
+			
+			>i {
+				display: block;
+				text-align: center;
+				margin: 0 auto;
+			}
+			
+			&.activa {
+				>i {
+					color: $verde-principal;
+				}
+			}
+			
+			&.revision {
+				>i {
+					color: $azul-principal;
+				}
+			}
+			
+			&.negativo {
+				>i {
+					color: $naranja-oscuro;
+				}
+			}
+		}
+		
+		@include breakpoint(medium down) {
+		.contador-camp .timer {
+			padding: 0;
+			margin-bottom: 0;
+			
+			.f {
+				padding: 0;
+				
+				.d_digit {
+					font-size: 0.8rem;
+					padding: 0;
+					min-width: 0;
+				}
+				
+				.d_text {
+					font-size: 0.5rem;
+				}	
+			}
+		}
+		}
+		
+		@include breakpoint(large only) {
+		.contador-camp .timer {
+			padding: 0;
+			margin-bottom: 0;
+			
+			.f {
+				padding: 0;
+				
+				.d_digit {
+					font-size: 1rem;
+					padding: 0;
+				}
+				
+				.d_text {
+					font-size: 0.5rem;
+				}	
+			}
+		}
+		}
+		
+	}
+}
+
+.pedido {
+    border: solid 1px lighten($verde-oscuro, 45%);
+	margin: 0.6rem 0.5rem 1.2rem;
+	@include breakpoint(large) {
+    margin: 0.6rem 0 1.2rem 0.5rem;
+	}
+    border-radius: 3px;
+	
+	.head {
+		background: #E7FFDD;
+		font-size: 0.8rem;
+		color: $notblack;
+		line-height: 1.8rem;
+		border-bottom: solid 1px lighten($verde-oscuro, 45%);
+		
+		em {
+			font-weight: normal;
+			font-style: normal;
+			color: $azul-principal;
+		}
+	}
+	
+	.info-pedido {
+		padding: 0.625rem;
+		@include breakpoint(medium) {
+		padding: 0.9375rem;
+		}
+		
+		.resumen {
+			@include breakpoint(large) {
+			padding-right: 0.9rem;
+			border-right: dashed 1px $azul-mediano;
+			}
+		}
+		
+		.datos-pedido {
+			@include breakpoint(large) {
+			padding-left: 0.9rem;
+			}
+			
+			@include breakpoint(medium down) {
+				padding-top: 1.5rem;
+			}
+			
+			table {
+				background: $white;
+				font-size: 0.825rem;
+				
+				tbody {
+					background: $white;
+					border: none;
+					
+					tr {
+						background: $white;
+						border-bottom: dotted 1px $medium-gray;
+					}
+					
+					th, td {
+						padding: 0.4rem 0.425rem 0.325rem;
+					}
+					
+					th {
+						text-align: left;
+						font-weight: normal;
+						
+						img {
+							max-height: 1.1rem;
+						}
+						
+						i {
+							&.fa-truck {
+								color: $azul-principal;
+							}
+							
+							&.fa-check {
+								color: $verde-principal;
+							}
+							
+							&.fa-circle-o-notch {
+								color: $naranja-principal;
+							}
+							
+							&.fa-times {
+								color: $naranja-principal;
+							}
+						}
+					}
+					
+					td {
+						color: $dark-gray;
+						text-align: right;
+						border-right: dotted 1px lighten($light-gray, 4%);
+					}
+				}
+			}
+		}
+		
+		h5 {
+			font-size: 1.1rem;
+			border-bottom: dashed 1px $light-gray;
+			color: $notblack;
+			margin-bottom: 1.2rem;
+		}
+		
+		.producto-pedido {
+			padding: 0.3rem 0;
+			border-bottom: dashed 1px lighten($medium-gray, 5%);
+			font-size: 0.85rem;
+			
+			img {
+				max-height: 4rem;
+			}
+			
+			.producto-cantidad {
+				line-height: 4rem;
+				color: $notblack;
+			}
+			
+			.producto-info {
+				display: block;
+				font-size: 0.8rem;
+			}
+			.producto-nombre {
+				display: block;
+				font-size: 0.8rem;
+				@include breakpoint(medium) {
+				font-size: 1rem;
+				}
+				color: $azul-mediano;
+			}
+			
+			&:last-child {
+				border-bottom: none;
+				padding-bottom: 0;
+			}
+		}
+		
+		p {
+			font-size: 0.8rem;
+			color: $notblack;
+			border: dotted 1px $light-gray;
+			border-radius: 4px;
+			padding: 0.6rem 0.8rem;
+			margin: -0.5rem 0 1.3rem;
+			
+			>strong {
+				color: $azul-principal;
+			}
+		}
+	}
+}

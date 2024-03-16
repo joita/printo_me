@@ -1,0 +1,33 @@
+.proceso-compra{
+    color: $gray;
+    font-size: 20px;
+    
+    .btn-green{
+        width:fit-content;
+    }
+    .boxed-btn{
+        margin-top: 0px;
+    }
+    h2{
+        color: $green;
+        text-align: center !important;
+        span{
+            color:$orange;
+        }
+    }
+    h3{
+        font-size: 29px;
+    }
+    img{
+        @include responsive($desktop-lg) {
+            border-radius: 40px;
+        }
+        @include responsive($tablet-landscape) {
+            border-radius: 25px;
+        }
+        @include responsive($tablet) {
+            border-radius: 60px;
+        }
+    }
+}
+

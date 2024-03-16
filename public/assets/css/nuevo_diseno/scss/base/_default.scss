@@ -1,0 +1,205 @@
+// =================================================
+
+// Open Sans
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-weight: lighter;
+  font-style: lighter;
+}
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('fonts/Open_Sans/OpenSans-Bold.ttf');
+  font-weight: lighter;
+  font-style: lighter;
+}
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url('fonts/Open_Sans/OpenSans-Semibold.ttf');
+  font-weight: lighter;
+  font-style: lighter;
+}
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url('fonts/Open_Sans/OpenSans-ExtraBold.ttf');
+  font-weight: lighter;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: 'OpenSansCondBold';
+  src: url('fonts/Open_Sans/OpenSans-CondBold.ttf');
+  // font-weight: lighter;
+  // font-style: lighter;
+}
+@font-face {
+  font-family: 'OpenSansCondLight';
+  src: url('fonts/Open_Sans/OpenSans-CondLight.ttf');
+  // font-weight: lighter;
+  // font-style: lighter;
+}
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('fonts/Open_Sans/OpenSans-Light.ttf');
+  font-weight: lighter;
+  font-style: lighter;
+}
+$OpenSansRegular: "OpenSansRegular",sans-serif;
+$OpenSansLight: "OpenSansLight",sans-serif;
+$OpenSansSemibold: "OpenSansSemibold",sans-serif;
+$OpenSansBold: "OpenSansBold",sans-serif;
+$OpenSansExtraBold: "OpenSansExtraBold",sans-serif;
+$OpenSansCondBold: "OpenSansCondBold",sans-serif;
+$OpenSansCondLight: "OpenSansCondLight",sans-serif;
+
+// NEXA
+
+@font-face {
+  font-family: 'NexaLight';
+  src: url('fonts/NexaLight.otf');
+}
+@font-face {
+  font-family: 'NexaBold';
+  src: url('fonts/NexaBold.otf');
+}
+
+// =================================================
+
+$NexaLight: "NexaLight",sans-serif;
+$NexaBold: "NexaBold",sans-serif;
+
+html {
+  margin: 0px !important;
+  padding: 0px !important; 
+}
+
+body {
+  // font-family: $NexaLight;
+  font-family: $OpenSansRegular;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+  letter-spacing: normal;
+  line-height: 1.5em;
+  color: $black;
+  position: relative; 
+    // //Responsive Tablet
+    // @include responsive($tablet) {
+    //   font-size: 14px;
+    // }
+}
+
+a {
+  color: #000;
+  outline: 0;
+  &:hover, 
+  &:active, 
+  &:focus{
+    outline: 0;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #e3e3e3; 
+    text-decoration: none;
+  }
+}
+
+
+p{
+  margin: 0;
+  // line-height: 24px;
+  margin-bottom: 10px;
+}
+h1,h2,h3,h4,h5{
+  // font-family: 'Roboto', sans-serif;
+  color: $lila;
+  font-weight: 700;
+}
+h1 {
+  font-size: 18px;  
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+.clear {
+  clear: both; 
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px; 
+}
+
+.no-padding-left {
+  padding-left: 0px; 
+}
+.box-about-me .no-padding-left {
+  margin-right: 20px;
+}
+.no-padding-right {
+  padding-right: 0px; 
+}
+.no-margin{
+  margin-right: 0px!important;
+  margin-left: 0px!important;
+}
+.no-margin-right{
+  margin-right: 0px!important;
+}
+.no-margin-left{
+  margin-left: 0px!important;
+}
+
+.title{
+  margin: 0;
+  font-size: 36px;
+  text-transform: uppercase;
+  //Responsive phone
+  @include responsive($phone) {
+    font-size: 25px;
+  }
+
+  // &.light{
+  //   font-family: $RalewayExtraLight;
+  // }
+}
+
+.title-section{
+  font-size: 2.1rem;
+  // font-family: $NexaBold;
+  font-weight: 700;
+ 
+  //Responsive phone
+  @include responsive($tablet) {
+    font-size: 1.4rem;
+  }
+}
+.contact-complement .title-section {
+    margin: 64px 0 50px;
+  }
+  .last-post {
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: #8c8c8c;
+    margin-bottom: 50px;
+  }
+  .title-int {
+    color: #cabad4;
+    font-size: 40px;
+    margin: 65px 0;
+    
+  }
+// .container{ margin: 0 auto; max-width: 980px; }
+

@@ -1,0 +1,269 @@
+.boton-solo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .boxed-btn{
+        font-size: 20px;
+        font-weight: 600;
+        @include responsive($desktop-lg) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @include responsive($phone) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .boxed-btn-green{
+        width:70%;
+    }
+  }
+  .boxed-btn{
+    margin-top: 40px;
+    background: $orange;
+    padding: 8px 25px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        background-color: $green;
+        color: white;
+    }
+	@include responsive($tablet) {
+        padding:10px;
+        font-size: 18px;
+    }
+}
+.info-btn{
+    background-color: $orange;
+    background-image: url("././img/icon-info.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    padding: 9px 35px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        background-color: $green;
+        color: white;
+    }
+   
+    @include responsive($desktop-lg-m) {
+        font-size: 14px;
+    }
+    @include responsive($desktop-lg) {
+        font-size: 13px;
+        padding: 9px 30px;
+    }
+    @include responsive($desktop) {
+        font-size: 12px;
+        padding: 9px 25px;
+        display: block;
+    }
+    @include responsive($tablet-landscape) {
+        font-size: 11px;
+        padding: 9px 5px;
+        padding-right: 20px;
+        display: block;
+    }
+    @include responsive($tablet) {
+        font-size: 10px;
+        padding: 9px 15px;
+    }
+    
+}
+.add-btn{
+    margin-top: 40px;
+    background-color: $orange;
+    background-image: url("././img/add.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    padding: 9px 35px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        background-color: $green;
+        color: white;
+    }
+}
+.add-btn-white{
+    margin-top: 40px;
+    background-color: white;
+    background-image: url("././img/add.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    border:2px solid $green;
+    background-position-y: center;
+    padding: 9px 35px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.arrow-btn-white{
+    display: block;
+    background-color: white;
+    background-image: url("././img/icon-downarror-green.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    padding: 9px 0px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    color: $gray;
+    &:hover{
+        color: $green;
+    }
+    @include responsive($tablet-landscape) {
+        font-size: 11px;
+        padding: 9px 5px;
+        padding-right: 20px;
+        background-image: none;
+        line-height: 15px;
+    }
+}
+.add-btn-white2{
+    display: block;
+    background-color: white;
+    background-image: url("././img/icon-add-green.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    padding: 9px 0px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    color: $gray;
+    &:hover{
+        color: $green;
+    }
+    @include responsive($tablet-landscape) {
+        font-size: 11px;
+        padding: 9px 5px;
+        padding-right: 20px;
+        background-image: none;
+        line-height: 15px;
+    }
+}
+.btn-green{
+    background-color: $green !important;
+    &:hover{
+        opacity: 0.7;
+        border:1px solid $green;
+    }
+}
+.boxed-btn-green{
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    background: $green;
+    padding: 9px 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        background-color: white;
+        color: $green;
+        border:1px solid $green;
+    }
+}
+
+.cont-btn-shirt{
+    background-color: white;
+    margin-bottom: 20px;
+    background-image: url("././img/icon-shirt.png");
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: center;
+    padding-left: 50px;
+    padding-right: 20px;
+    border: 2px solid $green;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        opacity: 0.9;
+    }
+}
+.cont-btn-font{
+    background-color: white;
+    margin-bottom: 20px;
+    background-image: url("././img/icon-font.png");
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: center;
+    padding-left: 50px;
+    padding-right: 20px;
+    border: 2px solid $green;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        opacity: 0.9;
+    }
+}
+.cont-btn-image{
+    background-color: white;
+    margin-bottom: 20px;
+    background-image: url("././img/icon-image.png");
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: center;
+    padding-left: 50px;
+    padding-right: 20px;
+    border: 2px solid $green;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        opacity: 0.9;
+    }
+}
+.cont-btn-star{
+    background-color: white;
+    margin-bottom: 20px;
+    background-image: url("././img/icon-star.png");
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: center;
+    padding-left: 50px;
+    padding-right: 20px;
+    border: 2px solid $green;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover{
+        opacity: 0.9;
+    }
+}

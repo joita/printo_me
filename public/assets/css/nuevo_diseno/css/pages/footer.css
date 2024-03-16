@@ -1,0 +1,14 @@
+.top-footer {
+  background-image: url("././img/top-footer.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 30;
+}
+
+footer {
+  background: black;
+}

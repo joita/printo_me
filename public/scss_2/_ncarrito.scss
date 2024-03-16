@@ -1,0 +1,879 @@
+.cart {
+    &-area {
+        position: relative;
+    }
+
+    &-entry {
+        position: relative;
+        background: $white;
+        margin-bottom: 2px;
+
+        &.enhance {
+            background: lighten($azul-principal, 45%);
+        }
+
+        &-img-holder {
+            padding: 0.825rem !important;
+            .cart-entry-img {
+                position: relative;
+                display: block;
+                border: solid 1px $light-gray;
+            }
+        }
+
+        &-middle-col, &-last-col {
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem;
+            position: relative;
+        }
+
+        &-title, &-whole-price {
+            display: block;
+            font-weight: bold;
+            color: $black;
+            @include breakpoint(small only) {
+                @include breakpoint(portrait) {
+                    font-size: 4.3vw
+                }
+                @include breakpoint(landscape) {
+                    font-size: 2.6vw;
+                }
+                margin-bottom: 0.225rem;
+            }
+            @include breakpoint(medium) {
+                font-size: 0.9rem;
+                margin-bottom: 0.525rem;
+            }
+            @include breakpoint(large) {
+                font-size: 1.1rem;
+                margin-bottom: 0.625rem;
+            }
+        }
+
+        &-info {
+            display: block;
+            color: $dark-gray;
+            @include breakpoint(small only) {
+                @include breakpoint(portrait) {
+                    font-size: 3.9vw;
+                }
+                @include breakpoint(landscape) {
+                    font-size: 2vw;
+                }
+                margin-bottom: 0.225rem;
+            }
+            @include breakpoint(medium) {
+                font-size: 0.9rem;
+                margin-bottom: 0.525rem;
+            }
+            @include breakpoint(xlarge) {
+                margin-bottom: 0.625rem;
+            }
+
+            i {
+                text-shadow: 0px 0px 2px $medium-gray;
+            }
+        }
+
+        &-multiplier, &-price {
+
+        }
+
+        &-x {
+            font-weight: normal;
+            color: $medium-gray;
+        }
+
+        &-edit-quantity, &-more-sizes, &-edit-design, &-delete {
+            display: inline-block;
+            @include breakpoint(small) {
+                font-size: 0.6rem;
+            }
+            @include breakpoint(medium) {
+                font-size: 0.7rem;
+            }
+            background: $white;
+            border: solid 1px $azul-principal;
+            padding: 0.2rem 0.5rem;
+            margin: 0 auto;
+            color: $azul-principal;
+            border-radius: 2px;
+            @include transition(border 0.25s, color 0.25s);
+
+            &:hover, &:focus {
+                border-color: darken($azul-principal, 10%);
+                color: darken($azul-principal, 10%);
+            }
+        }
+
+        &-more-sizes {
+            border-color: $verde-principal;
+            color: $verde-principal;
+
+            &:hover, &:focus {
+                border-color: darken($verde-principal, 10%);
+                color: darken($verde-principal, 10%);
+            }
+        }
+
+        &-edit-design {
+            display: inline-block;
+            font-size: 0.7rem;
+            background: $white;
+            border: solid 1px $azul-principal;
+            padding: 0.2rem 0.5rem;
+            border-color: $verde-principal;
+            color: $verde-principal;
+
+            &:hover, &:focus {
+                border-color: darken($verde-principal, 10%);
+                color: darken($verde-principal, 10%);
+            }
+        }
+
+        &-delete {
+            border-color: $naranja-principal;
+            color: $naranja-principal;
+
+            &:hover, &:focus {
+                border-color: darken($naranja-principal, 10%);
+                color: darken($naranja-principal, 10%);
+            }
+        }
+    }
+}
+
+#contenedor-datos-direccion{
+    position: relative;
+    z-index: 1;
+    #loader{
+        display: none;
+        padding-left: 50%;
+        padding-right: 50%;
+        padding-bottom: 15%;
+        padding-top: 15%;
+        margin-top: -10px;
+        margin-bottom: -15px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        opacity: 0.7;
+        -moz-opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        background: $white;
+        align-content: center;
+        align-self: end;
+        position: absolute;
+        z-index: 2;
+        img{
+            height: 3rem;
+            width: auto;
+            position: absolute;
+            z-index: 3;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+#contenedor-datos-direccion-mi-cuenta{
+    position: relative;
+    z-index: 1;
+    #loader{
+        display: none;
+        padding-left: 50%;
+        padding-right: 50%;
+        padding-bottom: 30%;
+        padding-top: 30%;
+        margin-top: -10px;
+        margin-bottom: -15px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        opacity: 0.7;
+        -moz-opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        background: $white;
+        align-content: center;
+        align-self: end;
+        position: absolute;
+        z-index: 2;
+        img{
+            height: 3rem;
+            width: auto;
+            position: absolute;
+            z-index: 3;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+#contenedor-datos-direccion-fiscal{
+    position: relative;
+    z-index: 1;
+    #loader_fiscal{
+        display: none;
+        padding-left: 50%;
+        padding-right: 50%;
+        padding-bottom: 15%;
+        padding-top: 15%;
+        margin-top: -10px;
+        margin-bottom: -15px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        opacity: 0.7;
+        -moz-opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        background: $white;
+        align-content: center;
+        align-self: end;
+        position: absolute;
+        z-index: 2;
+        img{
+            height: 3rem;
+            width: auto;
+            position: absolute;
+            z-index: 3;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+#contenedor-datos-direccion-mi-cuenta-fiscal{
+    position: relative;
+    z-index: 1;
+    #loader_fiscal{
+        display: none;
+        padding-left: 50%;
+        padding-right: 50%;
+        padding-bottom: 30%;
+        padding-top: 30%;
+        margin-top: -10px;
+        margin-bottom: -15px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        opacity: 0.7;
+        -moz-opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        background: $white;
+        align-content: center;
+        align-self: end;
+        position: absolute;
+        z-index: 2;
+        img{
+            height: 3rem;
+            width: auto;
+            position: absolute;
+            z-index: 3;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.address-area {
+    position: relative;
+    background: $white;
+    padding: 1.425rem 0.825rem 1.525rem 0.825rem;
+
+    .direccion_pago {
+        &#direccion_fiscal_seleccionada {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .aceptamos {
+        @include breakpoint(xlarge) {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .input-group-label>i {
+        height: 2.175rem;
+        line-height: 2.175rem;
+    }
+
+    .input-group {
+        position: relative;
+        background-color: $white;
+        border-color: $white;
+        box-shadow: 0px 0px 3px darken($light-gray, 15%);
+        @include breakpoint(large) {
+            margin-bottom: 1.625rem;
+        }
+        input, textarea, select {
+            font-size: 1.1rem;
+        }
+        select {
+            height: 2.35rem;
+        }
+
+        small.form-error {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            @include breakpoint(medium down) {
+                display: none !important;
+            }
+        }
+    }
+
+    #tab_pago {
+        >li {
+            margin-right: 2px;
+            >a {
+                background: #E9E9E9;
+                >img {
+                    @include breakpoint(small) {
+                        max-height: 5.4vw;
+                    }
+                    @include breakpoint(medium) {
+                        max-height: 18px;
+                    }
+                    @include breakpoint(large) {
+                        max-height: 30px;
+                    }
+                }
+            }
+            &.is-active {
+                >a {
+                    background: $white;
+                }
+            }
+        }
+
+    }
+
+    .tabs-content {
+        .tabs-panel {
+            @include breakpoint(small only) {
+                padding: 0;
+            }
+        }
+
+        #pago_tarjeta {
+            @include breakpoint(large) {
+                padding: 2rem 1.2rem 1.2rem;
+            }
+
+            label {
+                color: $black;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            #candado {
+                @include breakpoint(small only) {
+                    max-height: 120px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+                @include breakpoint(medium only) {
+                    max-height: 150px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+            }
+
+            #ssl {
+                border: none;
+                color: darken($verde-principal, 10%);
+                text-align: center;
+            }
+        }
+
+        #pago_stripe {
+            @include breakpoint(large) {
+                padding: 2rem 1.2rem 1.2rem;
+            }
+
+            label {
+                color: $black;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            #candado {
+                @include breakpoint(small only) {
+                    max-height: 120px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+                @include breakpoint(medium only) {
+                    max-height: 150px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+            }
+
+            #ssl {
+                border: none;
+                color: darken($verde-principal, 10%);
+                text-align: center;
+            }
+        }
+
+
+
+        #pago_PPPtarjeta {
+            @include breakpoint(large) {
+                padding: 0;
+            }
+
+            label {
+                color: $black;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            #candado {
+                @include breakpoint(small only) {
+                    max-height: 120px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+                @include breakpoint(medium only) {
+                    max-height: 150px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+            }
+
+            #ssl {
+                border: none;
+                color: darken($verde-principal, 10%);
+                text-align: center;
+            }
+        }
+
+        #pago_paypal {
+            @include breakpoint(large) {
+                padding: 2rem 1.2rem 1.2rem;
+            }
+            #pp {
+                @include breakpoint(small only) {
+                    max-height: 120px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+                @include breakpoint(medium only) {
+                    max-height: 150px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+            }
+            #paypalp {
+                @include breakpoint(large) {
+                    padding-top: 4rem;
+                }
+            }
+        }
+
+        #pago_saldo {
+            @include breakpoint(large) {
+                padding: 2rem 1.2rem 1.2rem;
+            }
+            #ps {
+                @include breakpoint(small only) {
+                    max-height: 120px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+                @include breakpoint(medium only) {
+                    max-height: 150px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+            }
+            #saldop {
+                @include breakpoint(large) {
+                    padding-top: 4rem;
+                }
+            }
+        }
+
+        #pago_oxxo {
+            @include breakpoint(large) {
+                padding: 2rem 1.2rem 1.2rem;
+            }
+            #op {
+                @include breakpoint(small only) {
+                    max-height: 120px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+                @include breakpoint(medium only) {
+                    max-height: 150px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+            }
+            #opp {
+                @include breakpoint(large) {
+                    padding-top: 2.5rem;
+                }
+                strong {
+                    color: $black;
+                }
+            }
+        }
+
+        #pago_transferencia {
+            @include breakpoint(large) {
+                padding: 2rem 1.2rem 1.2rem;
+            }
+            #speip {
+                @include breakpoint(small only) {
+                    max-height: 120px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+                @include breakpoint(medium only) {
+                    max-height: 150px;
+                    margin-bottom: 1.2rem;
+                    margin-top: 0.7rem;
+                }
+                @include breakpoint(large) {
+                    margin-top: 1.2rem;
+                }
+            }
+            #speipp {
+                @include breakpoint(large) {
+                    padding-top: 2.5rem;
+                }
+                strong {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+#error-paso {
+    @include breakpoint(small only) {
+        margin-bottom: 0;
+    }
+}
+
+#pago-completado {
+    @include breakpoint(large) {
+        padding: 2rem 1.2rem 1.2rem;
+    }
+    #checklist-img {
+        @include breakpoint(small only) {
+            max-height: 120px;
+            margin-bottom: 1.2rem;
+            margin-top: 0.7rem;
+        }
+        @include breakpoint(medium only) {
+            max-height: 150px;
+            margin-bottom: 1.2rem;
+            margin-top: 0.7rem;
+        }
+    }
+    #checkp {
+        @include breakpoint(large) {
+            padding-top: 2.5rem;
+        }
+        strong {
+            color: $black;
+        }
+
+        &.oxxo {
+            padding-top: 0.7rem;
+        }
+    }
+}
+
+#sadface {
+    @include breakpoint(large) {
+        padding: 2rem 1.2rem 1.2rem;
+    }
+    #sf {
+        @include breakpoint(small only) {
+            max-height: 120px;
+            margin-bottom: 1.2rem;
+            margin-top: 0.7rem;
+        }
+        @include breakpoint(medium only) {
+            max-height: 150px;
+            margin-bottom: 1.2rem;
+            margin-top: 0.7rem;
+        }
+    }
+    #sfp {
+        @include breakpoint(large) {
+            padding-top: 1.5rem;
+        }
+        strong {
+            color: $black;
+        }
+    }
+}
+
+#login-p {
+    @include breakpoint(large) {
+        position: absolute;
+        right: 1.825rem;
+        top: 1.625rem;
+        margin: 0;
+    }
+    margin-bottom: 0.5rem;
+}
+
+#smalllogin {
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+#info-adicional-cart, #info-direccion-cart {
+    background: $white;
+    padding: 1.125rem;
+
+    p {
+        color: $black;
+        @include breakpoint(medium) {
+            font-size: 0.6rem;
+        }
+        @include breakpoint(xlarge) {
+            font-size: 0.8rem;
+        }
+        font-size: 0.8rem;
+        line-height: 1.7;
+        text-align: justify;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &#texto-custom {
+            color: $azul-principal;
+        }
+    }
+}
+
+#info-direccion-cart {
+    margin-top: 1.1rem;
+
+    #ddd {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+        color: darken($verde-principal, 10%);
+    }
+}
+
+#additional-button-holder {
+    background: $white;
+    padding-top: 0.825rem;
+    padding-bottom: 0.825rem;
+
+    #agmas, #vaciar, #permas {
+        display: inline-block;
+        font-size: 0.825rem;
+        background: $white;
+        border: solid 1px $azul-principal;
+        margin: 0;
+        padding: 0.35rem 0.65rem;
+        color: $azul-principal;
+
+        >i {
+            margin-right: 0.25rem;
+        }
+
+        &:hover, &:focus {
+            border-color: darken($azul-principal, 10%);
+            color: darken($azul-principal, 10%);
+        }
+    }
+
+    #permas {
+        color: $naranja-principal;
+        border-color: $naranja-principal;
+
+        &:hover, &:focus {
+            border-color: darken($naranja-principal, 10%);
+            color: darken($naranja-principal, 10%);
+        }
+    }
+
+    #vaciar {
+        color: darken($naranja-principal, 15%);
+        border-color: darken($naranja-principal, 15%);
+
+        &:hover, &:focus {
+            border-color: darken($naranja-principal, 25%);
+            color: darken($naranja-principal, 25%);
+        }
+    }
+}
+
+#invisible-spacer {
+    margin-bottom: 2rem;
+}
+
+.sums {
+    &-area {
+        position: relative;
+
+        &-entry {
+            position: relative;
+            @include breakpoint(medium) {
+                font-size: 0.9rem
+            }
+            @include breakpoint(xlarge) {
+                font-size: 1.1rem;
+            }
+            background: $white;
+            margin-bottom: 2px;
+            padding-top: 0.825rem;
+            padding-bottom: 0.825rem;
+
+            &.cupon-area {
+                padding-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                .cupon-area-first {
+                    padding-top: 0.825rem;
+                    padding-bottom: 0.825rem;
+                }
+                .cupon-area-second {
+                    padding-right: 0;
+                    .input-group {
+                        background: $light-gray !important;
+                    }
+                }
+            }
+        }
+
+        #codigo-cupon{
+            background: #A8A8A7 !important;
+            opacity: 25%;
+        }
+        #codigo-cupon::placeholder{
+            color: #272727;
+        }
+
+        .input-group {
+            margin: 0;
+            box-shadow: none;
+
+            input, button {
+                margin: 0;
+                @include breakpoint(medium) {
+                    font-size: 0.9rem;
+                    height: rem-calc(49);
+                }
+                @include breakpoint(large) {
+                    font-size: 1.1rem;
+                    height: rem-calc(51);
+                }
+            }
+
+            input {
+                padding: 0.825rem 0.5rem;
+                background: $light-gray;
+            }
+
+            button {
+                @include breakpoint(medium) {
+                    font-size: 1rem
+                }
+                @include breakpoint(xlarge) {
+                    font-size: 1.2rem;
+                }
+                padding: 0.9rem;
+                background: $light-gray;
+
+                &#validar-cupon {
+                    color: $verde-principal;
+                }
+
+                &#quitar-cupon {
+                    color: $naranja-principal;
+                }
+
+                &:hover, &:focus, &:active {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+.big-next-button {
+    @include breakpoint(medium) {
+        font-size: 1rem
+    }
+    @include breakpoint(xlarge) {
+        font-size: 1.2rem;
+    }
+    font-weight: bold;
+    background-color: darken($verde-principal, 10%) !important;
+
+    >i {
+        margin-left: 0.625rem;
+    }
+
+    &:hover, &:focus {
+        background-color: darken($verde-principal, 20%) !important;
+    }
+}
+
+#factura-label-container {
+    padding-top: 0.825rem;
+    padding-bottom: 0.825rem;
+    #factura-label {
+        font-size: 1.1rem;
+        color: $black;
+    }
+
+    .switch {
+        margin-bottom: 0;
+        height: rem-calc(31);
+    }
+}
+
+.StripeElement{
+    position: relative;
+    padding: 0.4rem 0.5rem 0.4rem;
+    border-radius: 10px;
+    border: 2px solid #025573 !important;
+    color: #FF4C00;
+    background-color: #fefefe !important;
+    box-shadow: 0px 0px 3px darken($light-gray, 15%);
+    font-size: 1.1rem !important;
+    font-weight: normal;
+    height: auto;
+    @include breakpoint(large) {
+        margin-bottom: 1.625rem;
+    }
+
+    small.form-error {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        @include breakpoint(medium down) {
+            display: none !important;
+        }
+    }
+}
+.terminos label {
+    color: black;
+    font-weight: bold;
+    display: inline;
+    margin-left: 20px;
+}
+.terminos {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.terminos a{
+    color:#ee4500;
+}
+#stripe_card_number, #stripe_expiry, #stripe_cvc {
+    height: 2.2em;
+}
+#flexCheckDefault {
+    margin-top: 6px;
+}

@@ -1,0 +1,40 @@
+{
+	"description": "The CodeIgniter framework",
+	"name": "codeigniter/framework",
+	"type": "project",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"irc": "irc://irc.freenode.net/codeigniter",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"require": {
+		"php": ">=5.2.4",
+		"vlucas/phpdotenv": "^2.0",
+		"facebook/php-sdk-v4": "^5.0",
+		"activecampaign/api-php": "1.0.0",
+		"sendgrid/sendgrid": "~4.0",
+		"bugsnag/bugsnag": "^3.0",
+		"guzzlehttp/guzzle": "^6.3",
+		"paragonie/random_compat": "^2.0",
+		"conekta/conekta-php": "3.3.0",
+		"paypal/rest-api-sdk-php": "*",
+		"dompdf/dompdf": "^0.7.0",
+		"alfallouji/dhl_api": "*",
+		"mervick/curl-helper": "^1.1",
+		"ksubileau/color-thief-php": "^1.3",
+		"league/color-extractor": "^0.3.2",
+		"google/recaptcha": "~1.1",
+		"ext-curl": "*",
+		"stripe/stripe-php": "^7.2",
+		"twilio/sdk": "*"
+	},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	},
+	"require-dev": {
+		"mikey179/vfsstream": "1.1.*"
+	}
+}

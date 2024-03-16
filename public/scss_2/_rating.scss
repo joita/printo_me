@@ -1,0 +1,257 @@
+.br-theme-fontawesome-stars .br-widget {
+  height: 34px;
+  white-space: nowrap;
+}
+.br-theme-fontawesome-stars .br-widget a {
+  font: normal normal normal 1.8rem/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  margin-right: 2px;
+}
+.br-theme-fontawesome-stars .br-widget a:after {
+  content: '\f005';
+  color: #d2d2d2;
+}
+.br-theme-fontawesome-stars .br-widget a.br-active:after {
+  color: #ffe55b;
+}
+.br-theme-fontawesome-stars .br-widget a.br-selected:after {
+  color: #ffe55b;
+}
+.br-theme-fontawesome-stars .br-widget .br-current-rating {
+  display: none;
+}
+.br-theme-fontawesome-stars .br-readonly a {
+  cursor: default;
+}
+@media print {
+  .br-theme-fontawesome-stars .br-widget a:after {
+    content: '\f006';
+    color: black;
+  }
+  .br-theme-fontawesome-stars .br-widget a.br-active:after,
+  .br-theme-fontawesome-stars .br-widget a.br-selected:after {
+    content: '\f005';
+    color: black;
+  }
+}
+
+#rating-row {
+    margin-bottom: 1.3rem;
+    i {
+        color: #ffe55b;
+        font-size: 1.6rem;
+        margin-right: 3px;
+        text-shadow: 0px 1px 5px $black;
+        vertical-align: middle;
+    }
+    span.ratprom {
+        display: inline-block;
+        vertical-align: middle;
+        color: $white;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-left: 0.4rem;
+    }
+
+    .totalrat {
+        display: block;
+        color: $white;
+        font-size: 0.9rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .button {
+        background: transparent;
+        border: solid 1px $verde-principal;
+        font-weight: bold;
+
+        &:hover {
+            border-color: lighten($verde-principal, 10%);
+        }
+
+        &#enviar-testimonio {
+            background: $verde-principal;
+            color: $black;
+            &:hover {
+                background: lighten($verde-principal, 10%);
+            }
+        }
+    }
+}
+
+.g-recaptcha {
+    >div {
+        margin: 0 auto 1.25rem !important;
+    }
+
+    @include breakpoint(small only) {
+        @include scale(0.74);
+        -webkit-transform-origin: 1vw 52%;
+        transform-origin: 1vw 52%;
+    }
+}
+
+#testimonio_form {
+    padding: 1.25rem;
+}
+
+#testimonio_button {
+    margin-bottom: 0;
+}
+
+#testimonios-grid, #testimonios-area {
+    .grid-item {
+        width: 100%;
+        @include breakpoint(large) {
+            width: 50%;
+        }
+        padding: 1rem;
+
+        .testimonio-container {
+            border: solid 1px lighten($medium-gray, 10%);
+            padding: 1rem;
+            border-radius: 2px;
+            background: $white;
+
+            blockquote.testimonio-texto {
+                border: none;
+                padding: 0;
+                font-size: 0.9rem;
+                color: $notblack;
+            }
+
+            .testimonio-mid-row{
+
+                .testimonio-nombre{
+                    display: block;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    color: $black;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                .testimonio-lower-row{
+                    border-bottom: dashed lighten($medium-gray, 14%) 1px;
+                }
+
+                .columna-nombre{
+                    display: block;
+                    padding-top: 0.75rem;
+                    padding-bottom: 0.75rem;
+                    padding-left: 0.5rem;
+                    width: calc(100% - 3rem);
+                }
+                .columna-avatar{
+                    width: 3rem;
+                    height: auto;
+                }
+
+                .respuesta-nombre{
+                    display: block;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    color: $black;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .testimonio-upper-row {
+                border-bottom: dashed lighten($medium-gray, 14%) 1px;
+                margin-bottom: 0.3rem;
+
+                .testimonio-rating {
+                    color: $naranja-principal;
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    padding-bottom: 0.5rem;
+                    >i {
+                        margin-right: 0.1rem;
+                    }
+
+                }
+
+                .testimonio-fecha {
+                    display: block;
+                    line-height: 1.8rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 0.9rem;
+                    color: $notblack;
+                }
+            }
+
+            .testimonio-lower-row {
+                .testimonio-nombre {
+                    display: block;
+                    border-top: dashed lighten($medium-gray, 14%) 1px;
+                    text-align: right;
+                    padding-top: 0.5rem;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    color: $dark-gray;
+
+                    &::before {
+                        content: " - ";
+                    }
+                }
+            }
+        }
+    }
+}
+
+#testimonios-area {
+    .grid-item {
+        width: 100% !important;
+        padding: 0.5rem !important;
+
+        .testimonio-container {
+            .testimonio-upper-row {
+
+                .testimonio-fecha {
+                    display: block;
+                    line-height: 1.8rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 0.725rem;
+                    color: $notblack;
+                }
+            }
+        }
+    }
+
+    .owl-item {
+        @include transition(opacity 0.3s);
+        opacity: 0.35;
+
+        &.active {
+            opacity: 0.5;
+        }
+
+        &.active.center {
+            opacity: 1;
+        }
+    }
+}
+
+.avatar {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    .avatar-image {
+        width: 3rem;
+        height: auto;
+        border-radius: 50%;
+        border: 0.0625rem solid $medium-gray;
+    }
+}
+
+.pagination a:hover{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,128 @@
+.ficha-producto{
+    margin-top: 120px;
+    margin-bottom: 80px;
+    #list-img{
+        img{
+            margin-top: 20px;
+            border:2px solid $green;
+            border-radius: 20px;
+            &:hover{
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+    }
+    .ficha-p{
+        border-bottom:2px solid #D8D8D8;
+        padding-bottom: 50px;
+    }
+    h1{
+        color: $gray;
+        text-align: left !important;
+        font-family: "Quicksand";
+        font-weight: 600;
+        @include responsive($tablet-landscape) {
+            text-align: center !important;
+            font-size: 26px;
+        }
+    }
+    h3{
+        text-align: left !important;
+        font-size: 28px;
+        color: $gray;
+        span{
+            color: $orange;
+        }
+        @include responsive($tablet-landscape) {
+            text-align: center !important;
+            font-size: 22px;
+        }
+    }
+    p{
+        text-align: left !important;
+        @include responsive($tablet-landscape) {
+            text-align: center !important;
+        }
+    }
+    ul{
+        padding-left: 5px;
+        li{
+            list-style:none;
+            color: $gray;
+            font-size: 18px;
+            padding-left: 0px;
+        }
+        li::before {
+            content: "> ";
+            font-size: 20px;
+            font-weight: 600;
+            color: $orange;
+        }
+    }
+    .boton-solo{
+        margin-top: 0px;
+    }
+    .precio{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color:$green;
+        font-size: 30px;
+        font-weight: 600;
+        @include responsive($tablet-landscape) {
+            text-align: center !important;
+        }
+    }
+    .info-envio{
+        color: $orange;
+        margin:30px 0px;
+        padding-right: 70px;
+        background-image: url("././img/envio.png");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: center;
+        height: 32px;
+        display: inline-block;
+        @include responsive($tablet-landscape) {
+            display: block;
+            text-align: center !important;
+            padding-right: 60px;
+            background-position-x: 90%;
+        }
+    }
+    .boxed-btn-green{
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        
+    }
+    .boton-solo{
+        padding-top: 10px;
+    }
+    .boxed-btn{
+        padding: 12px 9px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
+#show-img{
+    width: 100%;
+    height: 80%;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border:2px solid $green;
+    border-radius: 40px;
+    @include responsive($desktop-lg-m) {
+        height: 45%;
+    }
+    @include responsive($desktop) {
+        height: 500px;
+    }
+    @include responsive($tablet) {
+        height: 400px;
+    }
+    @include responsive($phone) {
+        height: 400px;
+    }
+}

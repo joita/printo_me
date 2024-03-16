@@ -1,0 +1,85 @@
+<div class="pscat fgc">
+	<div class="row fbc pscat">
+		<div class="small-18 medium-17 medium-centered columns aviso">
+			<h1 class="azul text-center divisor">Aviso de Privacidad</h1>
+			
+			<h3 class="subseccion-titulo">Términos y Condiciones de Uso</h3>
+			<p class="text-left medium-text-justify">DEYSY GABRIELA DE JESUS CRUZ HERNANDEZ, en lo sucesivo la “Empresa”, con domicilio en CALLE 133-A NUM. EXT. 815 NUM. INT. 55 CRUZAMIENTOS 46-A Y 46-I FRACC. VILLA MAGNA DEL SUR C.P. 97285 en Mérida, Yucatán, México expide los siguientes Términos y Condiciones para que a través de su diversos medios electrónicos se comercialicen y se oferten diversos productos al público en general, identificados de manera individual como “Usuario”.</p>
+			<p class="text-left medium-text-justify">Página de Internet de la Empresa: Es el sitio Web de PRINTOME, bajo la denominación printome.mx, en el cual PRINTOME publica Ofertas de Venta, en donde se puede registrar el usuario para adquirir los Productos publicados, realizar Pedidos, ponerse en contacto con PRINTOME o en servicio al Cliente a través del correo electrónico <?php echo safe_mailto('administracion@printome.mx'); ?>, entre otros.</p>
+
+			<h3 class="subseccion-titulo">Declaraciones</h3>
+			<p class="text-left medium-text-justify">PRINTOME declara que es una Empresa legalmente constituida bajo las leyes mexicanas, que tiene todos los permisos necesarios para cumplir su Objeto Social y que no tiene algún tipo de impedimento o limitante para cumplir con el mencionado Objeto, que incluye, la celebración del Contrato.</p>
+			<p class="text-left medium-text-justify">PRINTOME concede al Usuario una licencia personal limitada, no exclusiva, no transferible, revocable, por plazo indeterminado, conforme a los presentes Términos y Condiciones, para utilizar el Sitio, a fin de avalar, manifestar o interesarse en adquirir y adquirir mediante Oferta de Venta los productos que en la Página se encuentren publicados. La forma de utilizar el Sitio es personal e intransferible.</p>
+			<p class="text-left medium-text-justify">PRINTOME declara ser propietaria de los Bienes o Productos que se encuentren en las Ofertas de Venta, además de todos los elementos amparados por normas de propiedad intelectual. Todo lo anterior para efecto del Contrato.</p>
+			<p class="text-left medium-text-justify">PRINTOME declara que el contenido neto del Producto publicado en la Oferta de Venta corresponde a la Calidad, marca y demás elementos que se señalen en la propia Oferta de Venta.</p>
+			<p class="text-left medium-text-justify">PRINTOME se reserva todos los derechos no expresamente otorgados bajo el presente documento.</p>
+			<p class="text-left medium-text-justify">Este contrato y cualesquiera derechos y licencias otorgadas aquí, no podrán ser transferidos o cedidos por el Usuario pero PRINTOME si estará en posibilidad de transferirlos o cederlos sin restricción alguna.</p>
+			<p class="text-left medium-text-justify">El Usuario acepta Términos y Condiciones y se obliga a todo lo señalado en los mismos.</p>
+			<p class="text-left medium-text-justify">El Usuario está de acuerdo en que las exclusiones de garantía y limitaciones de responsabilidad establecidas con anterioridad son elementos fundamentales de la base de estos Términos y Condiciones.</p>
+			<p class="text-left medium-text-justify">El Usuario está consciente de que el tráfico de datos que proporciona acceso al Sitio es apoyado por un servicio prestado por la operadora de servicios de telecomunicaciones seleccionada y contratada por el Usuario y que dicha contratación es totalmente independiente del Sitio.</p>
+			<p class="text-left medium-text-justify">El Usuario reconoce que las comisiones cobradas por la operadora de servicios de telecomunicaciones de su elección y los impuestos aplicables pueden afectar el tráfico de datos necesarios para eventuales descargas y anuncios de un tercero en el dispositivo.</p>
+			<p class="text-left medium-text-justify">El Usuario declara y reconoce que el download de cualquier contenido del Sitio no le confiere la propiedad sobre cualesquiera marcas exhibidas en el Sitio.</p>
+			
+			<h3 class="subseccion-titulo">Promociones y Descuentos</h3>
+			<p class="text-left medium-text-justify">Son aquellas quitas sobre el precio del producto que se establezcan en la Página de Internet, las cuales estarán sujetas a las condiciones, restricciones, el plazo de duración o volumen de los productos que se encontraran en los diferentes anuncios publicados en la Página de Internet.</p>
+			
+			<h3 class="subseccion-titulo">Restricciones</h3>
+			<p class="text-left medium-text-justify">Cualquier trasgresión a los presentes Términos y Condiciones por parte del Usuario generarán el derecho en favor de PRINTOME de, en cualquier momento y sin necesidad de notificación previa de ningún tipo, suspender o terminar la prestación de los servicios y/o de retirarle o denegarle el acceso al Sitio al Usuario trasgresor, así como quitarle o sacarlo del Registro.</p>
+			<p class="text-left medium-text-justify">El Sitio puede ser utilizado únicamente con fines lícitos.</p>
+			<p class="text-left medium-text-justify">Se encuentra terminantemente prohibido cualquier tipo de copia, distribución, transmisión, retransmisión, publicación, impresión, difusión y/o explotación comercial del material y/o contenido puesto a disposición del público a través de este Sitio, sin el previo consentimiento expreso y por escrito de PRINTOME o, en su caso, del titular de los derechos de propiedad correspondientes. El incumplimiento de lo mencionado sujetará al infractor a todos los reclamos civiles y sanciones penales que pudieran corresponder.</p>
+			<p class="text-left medium-text-justify">LOS PADRES O TUTORES DE MENORES DE EDAD SERÁN RESPONSABLES POR LOS ACTOS POR ELLOS REALIZADOS SEGÚN LO DISPUESTO POR ESTOS TÉRMINOS Y CONDICIONES, INCLUYENDO LOS DAÑOS CAUSADOS A TERCEROS, ACCIONES REALIZADAS POR ELLOS Y QUE ESTÉN PROHIBIDAS POR LEY Y POR LAS DISPOSICIONES DE ESTE ACUERDO, SIN PERJUICIO DE LA RESPONSABILIDAD DEL USUARIO, SIEMPRE QUE ÉSTE NO FUESE PADRE O REPRESENTANTE LEGAL DEL MENOR INFRACTOR.</p>
+			<p class="text-left medium-text-justify">Al momento del Registro de Usuario no se aceptarán y podrán ser cancelados en cualquier momento, direcciones de correo electrónico (e-mails) o cualquier dato que contengan expresiones o conjuntos gráficos-denominativos que ya hayan sido escogidos anteriormente por otro Usuario o, que de alguna otra forma, fuesen injuriosos, altisonantes, coincidentes con marcas, nombres comerciales, anuncios de establecimientos, razones sociales de empresas, expresiones publicitarias, nombres y seudónimos de personas de relevancia pública, famosos o registrados por terceros, cuyo uso no esté autorizado o que fuese en general, contrario a la ley o a las exigencias morales y de buenas costumbres generalmente aceptadas, así como expresiones que pudieran inducir a otras personas por error, quedando claro que el Usuario responderá por el uso indebido tanto en el ámbito civil como penal, si aplicase.</p>
+			<p class="text-left medium-text-justify">El Usuario no deberá hacer Upload, publicar o de cualquier otra forma disponer en el Sitio de cualquier material protegido por derechos de autor, registro de marcas o cualquier otro derecho de propiedad intelectual sin previa y expresa autorización del titular del mencionado derecho.</p>
+
+			<h3 class="subseccion-titulo">Terminación del Contrato</h3>
+			<p class="text-left medium-text-justify">El Contrato que se perfecciona al contestar una oferta de venta termina en el momento que las partes cumplen con sus obligaciones.</p>
+			<p class="text-left medium-text-justify">La Empresa podrá Terminar anticipadamente el Contrato si:</p>
+			<ul>
+				<li>El Precio no es pagado puntualmente, a cuyo efecto las partes pactan expresamente que la falta de pago total o parcial producirá la rescisión de pleno derecho.</li>
+				<li>El Usuario incumple con cualquiera de las obligaciones asumidas en este documento.</li>
+				<li>Así lo convengan sus intereses cumpliendo previamente con sus obligaciones o indemnizarlo por dejar de hacerlo.</li>
+			</ul>
+			<p class="text-left medium-text-justify">La Empresa podrá optar por exigir la ejecución de su obligación de pagar el precio o rescindir el Contrato y la indemnización, además podrá exigir resarcimiento de daños y perjuicios.</p>
+			
+			<h3 class="subseccion-titulo">Vigencia de los Términos y Condiciones</h3>
+			<p class="text-left medium-text-justify">La Empresa, así como el Usuario, reconocen que los Términos y Condiciones son de vigencia ilimitada.</p>
+			<p class="text-left medium-text-justify">PRINTOME se reserva el derecho de efectuar alteraciones al presente documento sin necesidad de previo aviso. Por lo anterior PRINTOME recomienda al Usuario que vuelva a leer con regularidad este documento, de forma que se mantenga siempre informado sobre eventuales modificaciones. Las alteraciones al Contrato se volverán efectivas inmediatamente después de su publicación en el Sitio.</p>
+			<p class="text-left medium-text-justify">Una vez realizadas las modificaciones, se presumirá que el Usuario que continúe usando el Sitio tendrá pleno conocimiento, habrá leído y consentido los Términos y Condiciones reformados.</p>
+			<p class="text-left medium-text-justify">PRINTOME podrá rescindir unilateralmente el presente instrumento, mediante previa notificación al Usuario, en el plazo de 1 (un) día, la notificación puede ser, a elección de la Empresa, en el Sitio o por escrito.</p>
+			<p class="text-left medium-text-justify">Si PRINTOME rescinde los Términos y Condiciones o cierra la Página, será con previo análisis del Estado de los Contratos, por tal PRINTOME no estará obligada a indemnizar al Usuario.</p>
+			<p class="text-left medium-text-justify"><strong>Jurisdicción:</strong> En caso que exista conflicto en relación al Contrato, PRINTOME está en la total disposición de llegar a un acuerdo con el Usuario para la resolución del Conflicto. Si no existe dicho acuerdo, y en los demás casos no relacionados con el Contrato, se llevara la instancia correspondiente ante la Procuraduría del Consumidor o bien ante los Tribunales de la Ciudad de Mérida.</p>
+			<p class="text-left medium-text-justify"><strong>Interpretación:</strong> Para todo lo relativo a la interpretación de los presentes términos y condiciones se estará a lo dispuesto a los mismos, al glosario que como usuario puedes consultar, al aviso de privacidad, así como a todas las disposiciones que contengan los presentes términos y condiciones y a nuestra legislación mexicana vigente en Mérida, Yucatán.</p>
+			<p class="text-left medium-text-justify"><strong>Confidencialidad de la Información:</strong> Los datos de los Usuarios serán administrados únicamente por la Empresa en las formas establecidas en este Aviso de Privacidad. La Empresa hará todo lo que esté a su alcance para proteger la privacidad de la información. Puede suceder que en virtud de órdenes judiciales, o de regulaciones legales, la Empresa se vea compelida a revelar información a las autoridades o terceras partes bajo ciertas circunstancias, o bien en casos que terceras partes puedan interceptar o acceder a cierta información o transmisiones de datos en cuyo caso la Empresa no responderá por la información que sea revelada. En estos casos, la Empresa notificará al Usuario sobre ésta situación.</p>
+			<p class="text-left medium-text-justify">No asumimos ninguna obligación de mantener confidencial cualquier otra información que el Usuario proporcione a través de boletines y pláticas en línea (chats), así como la información que obtenga a través de los cookies, información que no haya sido directamente entregada a la Empresa.</p>
+			<p class="text-left medium-text-justify">Se debe aclarar que NO se vende, regala, facilita ni alquila la información del Usuario a ningún tercero ni somos dueños de la misma.</p>
+			<p class="text-left medium-text-justify">La Empresa tomará todas las medidas posibles para mantener la confidencialidad y la seguridad descritas anteriormente, pero no responderá por los daños o perjuicios que pudieran derivarse de la violación de esas medidas por parte de terceros que utilicen las redes públicas o el Internet, alterando los sistemas de seguridad para obtener acceso a la información de los Usuarios.</p>
+			<p class="text-left medium-text-justify">Las vulneraciones de seguridad ocurridas en cualquier fase del tratamiento que afecten de forma significativa los derechos patrimoniales o morales de los Titulares, serán informadas de forma inmediata por la Empresa al Usuario, a fin que este último pueda tomar las medidas correspondientes a la defensa de sus derechos.</p>
+			<p class="text-left medium-text-justify">Para mayor información, sírvase de consultar el Aviso de Privacidad que se encuentra en la Página Web de la Empresa.</p>
+			<p class="text-left medium-text-justify">Acceso y uso del Sitio: Tanto el Sitio como cualesquiera otros Sitios de cualquier otra forma disponibles en el Sitio (en lo sucesivo los “Micrositios”) son propiedad privada y cualesquiera interacciones deben realizarse de acuerdo con el presente documento. Sin perjuicio de las demás obligaciones del Usuario establecidas según se establece en éstos Términos y Condiciones, el Usuario se obliga a (i) no utilizar los contenidos y productos del Sitio con la finalidad de faltar a la ley, la moral, las buenas costumbres, las reglas y derechos de propiedad intelectual, la dignidad, la vida privada, la imagen, la intimidad personal y familiar; (ii) observar los más elevados patrones éticos y morales vigentes en Internet y las leyes nacionales e internacionales aplicables: (iii) no utilizar el Registro de Usuario, contenidos y productos proporcionados conforme a éstos Términos y Condiciones para transmitir o divulgar material ilegal, difamatorio, que viole, o sea abusivo, amenazador, obsceno, perjudicial, vulgar, injurioso o de cualquier otra forma censurable; (iv) no enviar mensajes que no hubiesen sido solicitados, reconocidos como spam, junk mail o cadenas de correspondencia (chainletters); no utilizar los Servicios tipo contenidos y los productos proporcionados conforme éstos Términos y Condiciones para enviar/divulgar cualquier tipo de virus o archivos que contengan cualquier de virus o que pudiesen causar daños a su destinatario o a terceros; (v) cumplir con todas las leyes aplicables con relación a la transmisión de datos desde México o del territorio en que el Usuario resida; (vi) no obtener o intentar obtener acceso a otros sistemas de redes o de computadoras conectados a los contenidos y productos del Sitio; (vii) responsabilizarse íntegramente del contenido de los correos electrónicos que se van a retransmitir así como del contenido e información que se pusieran a disposición en las Promociones del Sitio; (viii) no interferir o interrumpir los Servicios o los servidores o redes conectados a los Servicios, contenidos y productos abastecidos por medio del Sitio o de los Micrositios; y (ix) cumplir con los procedimientos, normas y reglamentos aplicables a los contenidos y productos del Sitio, divulgados en las páginas y enlaces de cada contenido de los Micrositios.</p>
+			<p class="text-left medium-text-justify">El Usuario no deberá enviar o transmitir por medio del Sitio cualquier contenido o información que contenga cualquier propaganda o propuesta relacionada con cualesquiera productos y/o servicios. El Usuario no podrá divulgar o hacer cualquier oferta comercial, religiosa, política o cualquier otra oferta incluso sin fines comerciales, incluyendo pero sin limitar las ofertas a los Usuarios para que se conviertan en Usuarios de otros servicios que de cualquier manera pudiesen competir con los Servicios prestados por la Empresa.</p>
+
+			<h3 class="subseccion-titulo">Políticas de Facturación</h3>
+			<ol>
+				<li>Para solicitar su facturación deberá de hacerlo dentro de un plazo no mayor a 5 días hábiles a partir del momento en que recibe el correo electrónico que indica que su mercancía fue embarcada.</li>
+				<li>Deberá enviar una solicitud de facturación al correo de administración@printome.com.mx dentro del mes en curso en que se realizó la compra. No procederán solicitudes de factura para compras de meses anteriores.</li>
+			</ol>
+			<p class="text-left medium-text-justify"><strong>Cualquier conducta del Usuario que, a criterio exclusivo de la Empresa, pudiera restringir o inhibir el uso del Sitio o de los Micrositios por otros Usuarios, terceros, o PRINTOME queda expresamente prohibida.</strong></p>
+			
+			<p class="text-left medium-text-justify">Fecha de última actualización: 29 de Junio de 2016</p>		
+		</div>
+	</div>
+</div>
+<style>
+    .aviso h1{
+        color:#FF4D00 !important;
+    }
+    .aviso h3{
+        color:#FF4D00 !important;
+    }
+    .aviso p {
+        color: #025573 !important;
+    }
+    .aviso ul,ol li {
+        color: #025573 !important;
+    }
+</style>

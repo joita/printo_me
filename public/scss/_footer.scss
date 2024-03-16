@@ -1,0 +1,36 @@
+#main-footer {
+	background: $azul-oscuro;
+	color: $medium-gray;
+	padding: 1.5rem 0;
+	
+	p {
+		font-size: 0.9rem;
+		margin: 0;
+		padding: 0.3rem 0;
+	}
+	
+	a {
+		color: $white;
+		
+		&:not(.main) {
+			@include breakpoint(small only) {
+				display: block;
+				line-height: 1.8;
+				padding: 0.3rem;
+				margin: 0.1rem 0;
+			}
+		}
+	}
+	
+	.separador {
+		@include breakpoint(small only)  {
+			display: none;
+		}
+	}
+	
+	@include breakpoint(small only) {
+		img {
+			margin-top: 1rem;
+		}
+	}
+}

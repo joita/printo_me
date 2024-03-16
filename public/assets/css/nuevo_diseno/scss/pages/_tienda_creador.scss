@@ -1,0 +1,189 @@
+.filtros_area{
+    .filtros_group{
+        display: block;
+        background-image: url("././img/icon-filtros2.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-position-x: 95%;
+    }
+    .elementos_filtro{
+        display: none;
+    }
+    margin-bottom: 30px;
+    margin-top: 40px;
+    h1{
+        font-size: 50px;
+    }
+    .filtros_row{
+        color: gray;
+        font-size: 18px;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #EBEBEB;
+        padding-top: 15px;
+        @include responsive($phone) {
+            font-size: 20px;
+            border-top: 2px solid #EBEBEB;
+            padding:10px 0px;
+        }
+        @include responsive($tablet) {
+            font-size: 20px;
+            border-top: 2px solid #EBEBEB;
+            padding:10px 0px;
+        }
+        @include responsive($tablet-landscape) {
+            font-size: 20px;
+            border-top: 2px solid #EBEBEB;
+            padding:10px 0px;
+        }
+        @include responsive($desktop) {
+            font-size: 20px;
+        }
+        img{
+            margin-top: -20px;
+            @include responsive($phone) {
+                margin-top: 0px;
+            }
+            @include responsive($tablet) {
+                margin-top: 0px;
+            }
+            @include responsive($tablet-landscape) {
+                margin-top: 0px;
+            }
+            @include responsive($desktop) {
+                margin-top: 0px;
+            }
+        }
+        a{
+            display: block;
+            font-size: 22px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: rgb(88, 88, 88);
+            font-weight: 600;
+            &:hover{
+                color: $orange;
+            }
+        }
+    }
+    select {
+        margin-top: 0px;
+        color: rgb(88, 88, 88);
+        font-size: 22px !important;
+        background: transparent;
+        background-image: url("././img/select-arrow.png");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 23px;
+        border:2px solid white;
+        border-radius: 20px;
+        margin-right: 2rem;
+        padding: 1rem;
+        padding-right: 2rem;
+        // A reset of styles, including removing the default dropdown arrow
+        appearance: none;
+        background-color: transparent;
+        width: 100%;
+        font-family: inherit;
+        text-align-last:center; 
+        padding-right: 40px;
+        cursor: pointer;
+      
+        // Stack above custom arrow
+        z-index: 1;
+      
+        // Remove dropdown arrow in IE10 & IE11
+        // @link https://www.filamentgroup.com/lab/select-css.html
+        &::-ms-expand {
+          display: none;
+        }
+        &:hover{
+            border:2px solid $green;
+        }
+      
+        // Remove focus outline, will add on alternate element
+        outline: none;
+      }
+}
+.tienda_productos{
+    padding-bottom: 30px;
+    margin-bottom: 80px;
+    .elemento_tienda{
+        margin-bottom: 30px;
+    }
+    .cont_image{
+        position: relative;
+        .wow_winer{
+            background-image: url("././img/wow-winner.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size:contain;
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            transform: translate(-50%, 0%);
+
+        }
+    }
+    .destacados_image {
+        border: 3px solid $green;
+        border-radius: 60px;
+        overflow: hidden;
+        @include responsive($desktop-lg-m) {
+            border-radius: 40px;
+        }
+        @include responsive($tablet) {
+            border-radius: 40px;
+        }
+        img {
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            width: 100%;
+            &:hover{
+                -webkit-transform: scale(1.03);
+                -moz-transform: scale(1.03);
+                -ms-transform: scale(1.03);
+                transform: scale(1.03);
+            }
+        }
+    }
+    .destacados_cont {
+        margin-top: 0px;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        padding-top: 5px;
+        padding-bottom: 18px;
+        
+        h2 {
+            color: $gray;
+            font-size: 30px;
+            font-weight: 200;
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+        h3 {
+            color: $gray;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        span {
+            color: $orange;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}

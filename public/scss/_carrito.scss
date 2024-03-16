@@ -1,0 +1,623 @@
+#carrito {
+
+	border-radius: 4px;
+	
+	.edit-cantidad, .edit-cantidad-custom, .borrar-cantidad, .borrar-cantidad-custom, .more-cantidad {
+		color: $verde-oscuro;
+		font-size: 0.7rem;
+		@include transition(color 0.2s);
+		
+		&:hover {
+			color: darken($verde-oscuro, 10%);
+		}
+	}
+	
+	.more-cantidad, .edit-cantidad, .edit-cantidad-custom {
+		margin-right: 1rem;
+	}
+	
+	.borrar-cantidad, .borrar-cantidad-custom { 
+		color: $naranja-oscuro;
+		
+		&:hover {
+			color: darken($naranja-oscuro, 10%);
+		}
+	}
+	
+	.more-cantidad {
+		color: $azul-principal;
+		
+		&:hover {
+			color: darken($azul-principal, 10%);
+		}
+	}
+	
+	@include breakpoint(small only) {
+		.edit-cantidad, .edit-cantidad-custom, .borrar-cantidad, .borrar-cantidad-custom, .more-cantidad {
+			padding: 0 4px;
+			margin: 0;
+			font-size: 0.8rem;
+			
+			/* >i {
+				font-size: 1rem;
+			} */
+			
+			>span {
+				display: none;
+			}
+		}
+		
+		.borrar-cantidad, .borrar-cantidad-custom {
+			float: right;
+		}
+	}
+	
+	tbody {
+		tr {
+			background: $white;
+			border-bottom: solid 1px $medium-gray;
+			border-radius: 4px 4px 0 0;
+		
+			td {
+				padding: 0;
+				vertical-align: top;
+			}
+			
+			&.enhance {
+				background: lighten($azul-mediano, 46%);
+			}
+		}
+	}
+	
+	thead {
+		background: $naranja-claro;
+		color: $white;
+		@include reg-shadow();
+	
+		tr {
+			
+			th {
+				padding: .5rem 0.525rem 0.425rem;
+				font-weight: normal;
+				font-size: 0.8rem;
+				
+				&.cantidades-carrito {
+					@include breakpoint(small only) {
+						width: 31px;
+					} 
+					@include breakpoint(medium) {
+						width: 47px;
+					}
+					border-right: dashed 1px lighten($naranja-claro,10%);
+					padding: inherit 0;
+				}
+				
+				&.titulo-precio {
+					border-right: dashed 1px lighten($naranja-claro,10%);
+				}
+			}
+		}
+	}
+	
+	.square-button-area, .square-cantidad {
+		float: left;
+	}
+
+	button.square {
+		width: 32px;
+		height: 32px;
+		background: $white;
+		border: solid 1px $light-gray;
+		display: block;
+		border-left: none;
+		line-height: 36px;
+		font-size: 0.9rem;
+		@include transition(background 0.2s, color 0.2s);
+		
+		&:hover {
+			background: darken($white, 3%);
+		}
+		
+		&.increase {
+			border-top: none;
+			border-bottom: none;
+			color: lighten($verde-oscuro, 50%);
+			
+			&:hover { 
+				color: lighten($verde-oscuro, 25%);
+			}
+		}
+		
+		&.decrease {
+			border-bottom: none;
+			color: lighten($azul-oscuro, 60%);
+			
+			&:hover {
+				color: lighten($azul-oscuro, 35%);
+			}
+		}
+	}
+	
+	input.qtyact {
+		border: none;
+		height: 64px;
+		background: transparent;
+		line-height: 64px;
+		@include breakpoint(small only) {
+			width: 32px;
+		} 
+		@include breakpoint(medium) {
+			width: 48px;
+		}
+		text-align: center;
+		margin: 0;
+		box-shadow: none;
+	}
+	
+	.cantidades-carrito {
+		max-width: 64px;
+		border-right: dashed 1px $light-gray;
+	}
+	
+	.carrito-foto {
+		float: left;
+		margin: 3px;
+		@include breakpoint(small only) {
+			margin: 5px 3px 0;
+			max-width: 38px;
+			height: auto;
+		}
+	}
+	
+	.carrito-descripcion {
+		float: left;
+		@include breakpoint(small only) {
+			padding: 0.2rem 0.3rem;
+			font-size: 0.8rem;
+			width: 76.5%;
+		}
+		@include breakpoint(medium) {
+			padding: 0.4rem 0.6rem;
+			font-size: 0.8rem;
+		}
+		min-height: 64px;
+		
+		.carrito-nombre-producto, .carrito-talla {
+			display: block;
+		}
+		
+		.carrito-nombre-producto {
+			color: $azul-principal;
+			font-weight: bold;
+		}
+		
+		.carrito-talla {
+			color: $notblack;
+		}
+	}
+	
+	.info-carrito {
+		text-align: left;
+		border-right: dashed 1px $light-gray;
+	}
+	
+	.quitar-carrito-espacio {
+		vertical-align: middle;
+		text-align: center;
+		@include breakpoint(small) {
+			width: 32px;
+		} 
+		@include breakpoint(medium) {
+			width: 50px;
+		}
+		
+	
+		a {
+			@include breakpoint(small) {
+				height: 26px;
+				width: 26px;
+			} 
+			@include breakpoint(medium) {
+				height: 32px;
+				width: 32px;
+			}
+			display: inline-block;
+			color: lighten($naranja-oscuro, 60%);
+			@include transition(color 0.2s);
+			
+			&:hover {
+				color: lighten($naranja-oscuro, 40%);
+			}
+		}
+	}
+	
+	.precio-carrito {
+		@include breakpoint(small) {
+			width: 95px;
+		}
+		@include breakpoint(medium) {
+			width: 100px;
+		}
+		@include breakpoint(large) {
+			width: 130px;
+		}
+		border-right: dashed 1px $light-gray;
+	
+		span {
+			padding: 0.4rem 0.6rem;
+			min-height: 64px;
+			@include breakpoint(small) {
+				font-size: 0.8rem;
+			}
+			@include breakpoint(medium) {
+				font-size: 0.8rem;
+			}
+			display: block;
+		}
+	}
+	
+	.precio-carrito-sub {
+		border-right: dashed 1px $light-gray;
+		
+		span {
+			padding: 0.6rem 0.6rem;
+			font-size: 0.8rem;
+			display: block;
+		}
+	}
+	
+	.verde {
+		color: $verde-principal;
+	}
+	
+	#envio_gratis {
+		label {
+			input {
+				float: left;
+				margin: 0.6rem 0.4rem;
+			}
+			
+			span {
+				padding: 0;
+				display: block;
+				line-height: 1.4;
+			}
+		}
+	}
+	
+	#explicacion_envio_gratis {
+		font-size: 0.7rem;
+		line-height: 1.6;
+		display: block;
+		padding: 0.6rem 0.9rem;
+		text-align: justify;
+		color: $naranja-oscuro;
+	}
+	
+	.prec-esp {
+		@include breakpoint(small only) {
+			display: none;
+		}
+	}
+	
+	#cupon-label {
+		@include breakpoint(small only) {
+			margin: 0.4rem 0;
+		}
+		@include breakpoint(medium) {
+			margin: 0;
+		}
+		padding: 0.1rem 0.5rem 0 0;
+		line-height: 1.8rem;
+	}
+	
+	#cupon {
+		@include breakpoint(small only) {
+			margin: 0.4rem 0;
+		}
+		@include breakpoint(medium) {
+			margin: 0;
+		}
+		padding: 0.2rem 0.3rem 0.1rem;
+		height: 1.9rem;
+		font-size: 0.8rem;
+	}
+	
+	#cupon-validar {
+		@include breakpoint(small only) {
+			margin: 0.4rem 0;
+		}
+		@include breakpoint(medium) {
+			margin: 0;
+		}
+		padding: 0.4rem 0.8rem;
+		height: 1.9rem;
+		border-radius: 0 3px 3px 0;
+		font-weight: normal;
+		font-size: 0.8rem;
+		background: $azul-mediano;
+		
+		&:hover {
+			background: darken($azul-mediano, 10%);
+		}
+	}
+	
+	#individual {
+		line-height: 1.9rem;
+		@include breakpoint(small only) {
+			text-align: center;
+			font-size: 0.7rem;
+			margin: 0.5rem 0 0;
+			line-height: 1.6;
+		}
+		
+		@include breakpoint(medium only) {
+			line-height: 1.6;
+		}
+	}
+	
+	#agmas, #pagmas {
+		margin: 0;
+	}
+	
+	#agmas {
+		font-size: 0.8rem;
+		white-space: nowrap;
+		background: lighten($azul-mediano,10%);
+		font-weight: normal;
+		
+		&:hover {
+			background: $azul-mediano;
+		}
+	}
+	
+	#pagmas {
+		font-size: 0.8rem;
+		white-space: nowrap;
+		font-weight: bold;
+	}
+}
+
+#factu {
+	font-size: 1.1rem;
+}
+
+.direccion_pago {
+    border: dashed 1px lighten($naranja-mediano,20%);
+    padding: 11px 15px;
+    margin: 0 0 2rem;
+	position: relative;
+	border-radius: 4px;
+	
+	input {
+		position: absolute;
+		display: block;
+		top: 50%;
+		width: 1rem;
+		height: 1rem;
+		margin-top: -0.5rem;
+		left: 12px;
+	}
+	
+	>span {
+		display: block;
+		line-height: 1.2rem;
+		color: $dark-gray;
+		
+		>strong {
+			display: block;
+			font-size: 1.1rem;
+			font-weight: normal;
+			color: $azul-oscuro;
+			margin-bottom: 0.3rem;
+		}
+	}
+	
+	&.is-invalid-label {
+		border-color: $naranja-oscuro;
+		background: lighten($naranja-mediano, 30%);
+	}
+}
+
+.paso {
+    color: $verde-oscuro;
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: solid 1px $verde-oscuro;
+    margin-bottom: 0.7rem;
+}
+
+#ssl {
+    font-size: 0.8rem;
+    padding-left: 2.1rem;
+    position: relative;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.4rem;
+    padding: 1rem 0 1rem 2.1rem;
+    border-bottom: dotted 1px $verde-principal;
+	
+	>i {
+		content: "\f023";
+		font-family: "FontAwesome";
+		color: #12B112;
+		position: absolute;
+		display: block;
+		left: 0;
+		font-size: 2rem;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
+
+.p_t_b {
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+    border-top: dotted 1px $verde-principal;
+    padding-top: 1.2rem;
+}
+
+#pagar_tarjeta_btn {
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.7rem 1.1rem;
+    line-height: 1.4rem;
+    background: $verde-principal;
+    margin: 0;
+	
+	&:hover {
+		background: darken($verde-principal, 7%);
+	}
+}
+
+#pagar_oxxo_btn {
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.7rem 1.1rem;
+    line-height: 1.4rem;
+    background: #e21c2a;
+    margin: 0;
+	
+	&:hover {
+		background: darken(#e21c2a, 10%);
+	}
+}
+
+#pagar_paypal_btn {
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.7rem 1.1rem;
+    line-height: 1.4rem;
+    background: #ffc439;
+    margin: 0;
+    color: #222d65;
+	
+	&:hover {
+		background: darken(#ffc439, 10%);
+	}
+}
+
+#tab_pago {
+    border: none;
+    border-bottom: solid 1px $light-gray;
+	
+	>li {
+		border: none;
+		border-bottom: none;
+		
+		>a {
+			padding: 0.4rem;
+			@include breakpoint(medium) {
+				padding: 0.7rem;
+			}
+			border-radius: 3px 3px 0 0;
+			border: solid 1px $light-gray;
+			border-bottom: none;
+			background: lighten($light-gray, 5%);
+			
+			&:focus, &[aria-selected='true'] {
+				background: $white;
+				border-bottom: solid 1px $white;
+				margin-bottom: -1px;
+			}
+			
+			>img {
+				max-height: 19px;
+				@include breakpoint(medium) {
+					max-height: 18px;
+				}
+			}
+		}
+	}
+	
+}
+
+.tabs-panel {
+	
+	.aceptamos {
+		color: $notblack;
+		
+		strong {
+			color: $azul-principal;
+			font-weight: bold;
+		}
+		
+		&.naranja {
+			color: $naranja-principal;
+			font-size: 1rem;
+			text-align: center;
+		}
+	}
+}
+
+#terminar_pago {
+	.precio-carrito {
+		width: 89px;
+	}
+	
+	input.qtyact {
+		width: 35px;
+	}
+	
+	.carrito-descripcion {
+		font-size: 0.8rem;
+		width: 65%;
+	}
+}	
+
+#id_direccion, #id_direccion_fiscal, .id_direccion {
+    border: solid 1px $azul-mediano;
+	background-color: darken($white, 8%);
+    border-radius: 3px;
+    padding: 0.5rem 0.5rem 0.3rem;
+	@include transition(background 0.25s);
+	
+	&:hover {
+		background-color: darken($white, 3%);
+	}
+}
+
+.paypal_pay {
+	position: relative;
+}
+
+#paypal_loading {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+.mastercard, .amex, .visa {
+	background-position: 96.1% center !important;
+	background-repeat: no-repeat !important;
+}
+
+.mastercard { background-image: url(../assets/images/master.svg) !important; }
+.amex { background-image: url(../assets/images/amex.svg) !important; }
+.visa { background-image: url(../assets/images/visa.svg) !important; }
+
+#card_errors {
+    font-size: 1.1rem;
+    color: $naranja-principal;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.vacio {
+    margin: 5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.error-icon {
+	font-size: 6rem;
+	color: $naranja-oscuro;
+}

@@ -1,0 +1,25 @@
+.plantillas{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    .h1-plantillas{
+        text-align: center !important;
+        font-size: 50px;
+    }
+    .separador1{
+        background-position: center center;
+    }
+    .div-search{
+        @include responsive($tablet-landscape) {
+            width: 100%;
+        }
+    }
+}
+#filtros-ocacion{
+    display: none;
+}
+#show-filtros{
+    background-image: url("././img/icon-filtros.png");
+    background-position: left center;
+    background-position-x: 5%;
+    background-repeat: no-repeat;
+}

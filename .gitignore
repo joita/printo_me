@@ -1,0 +1,45 @@
+.DS_Store
+error.log
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+## Custom
+/files
+/public/.htaccess
+/application/config/config.php
+/application/controllers/ActiveTest.php
+/application/controllers/Activetest.php
+/.env
+/public/assets/pdf
+/public/assets/comprobantes
+/public/js/main.js
+/public/js/maindes.js
+robots.txt
+/public/MJ12_5b0faa71-32a6-4206-b481-c4204254c050.txt
+/public/kcevn84pmpxwge6lv2qecbudkhfbav.html
+
+##Security
+/application/config/database.php

@@ -1,0 +1,54 @@
+.principal-blog{
+    .flyer-sb{
+        background-image: url("././img/img-flyer-sb2.png");
+        background-size: contain;
+    }
+    .info-opc {
+        margin:40px 10px;
+        padding:0px 0px 10px 0px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        border-radius: 35px;
+        box-shadow: 0 10px 12px 0 rgba(88, 88, 88, 0.2),0 1px 5px 0 rgba(97, 97, 97, 0.19) !important;
+    }
+    h2{
+        text-align: left;
+        font-size: 26px;
+    }
+    p{
+        text-align: left;
+        margin: 30px 0px;
+        margin-top: 10px;
+    }
+    .info-text-cont{
+        padding:25px;
+        padding-top: 10px;
+    }
+    .blog-tags{
+        a{
+            float: left;
+            background: #f9f9f9;
+            padding: 5px 15px;
+            margin-left: 20px;
+            margin-top:10px;
+            font-size: 18px;
+            font-weight: 200;
+            border: 2px solid $green;
+            color: $gray;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            &:hover{
+                background-color: $green;
+                color: white;
+            }
+        }
+        span{
+            float:left;
+            font-size: 28px;
+            color: $gray;
+            margin-top: 15px;
+        }
+    }
+    
+}

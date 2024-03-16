@@ -1,0 +1,206 @@
+.slider_active2{
+    .owl-dots{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+.wow_area{
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    @include responsive($tablet) {
+        margin-top: 40px;
+    }
+    @include responsive($phone) {
+        margin-top: 20px;
+    }
+    .cont-wow{
+        padding-right: 50px;
+        padding-top: 50px;
+        @include responsive($tablet) {
+            padding-right: 0px;
+        }
+        @include responsive($phone) {
+            padding-right: 0px;
+        }
+        span{
+            font-size:80px;
+        }
+    }
+    .owl-item {
+        margin-right: 30px !important;
+    }
+    .wow-opc {
+        margin:20px 10px;
+        .wow-image{
+            position: relative;
+            img{
+                width: 300px;
+                height: 300px;
+                border: 8px solid $green;
+                -webkit-border-radius: 300px;
+                -moz-border-radius: 300px;
+                border-radius: 300px;
+                display: block;
+                margin: 0 auto;
+            }
+            .wow-cinta-hoy{
+                background-image: url("././img/ribon-hoy.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100%;
+                height: 109px;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+            .wow-cinta-ayer{
+                background-image: url("././img/ribon-ayer.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100%;
+                height: 109px;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+            .wow-cinta-2dias{
+                background-image: url("././img/ribon-2dias.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100%;
+                height: 109px;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+            .wow-cinta-3dias{
+                background-image: url("././img/ribon-3dias.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100%;
+                height: 109px;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+        }
+        
+    }
+    h2{
+        text-align: center;
+        color: $gray;
+    }
+    p{
+        text-align: center;
+    }
+    .clientes-text-cont{
+        padding:25px;
+        padding-top: 10px;
+    }
+    .owl-carousel {
+        .owl-nav {
+            div {
+                background: transparent;
+                height: 40px;
+                left: 0px;
+                text-align: center;
+                -webkit-transform: translateY(0%);
+                -ms-transform: translateY(0%);
+                transform: translateY(0%);
+                width: 40px;
+                color: #919191;
+                background-color: transparent;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                font-size: 15px;
+                line-height: 40px;
+                border: 1px solid #EEEEEE;
+                left: auto;
+                left: auto;
+                top: -100px;
+                right: 55px;
+                
+            }
+            .owl-next {
+                background-image: url("././img/next.png");
+                background-repeat: no-repeat;
+                position: absolute;
+                height: 50px;
+                width: 40px;
+                top: 30%;
+                right: -60px;
+                border: none;
+                &:hover{
+                    background-color: white;
+                    opacity: 0.5;
+                }
+                @include responsive($tablet) {
+                    right: 0px;
+                }
+                @include responsive($desktop-lg) {
+                    right: 0px;
+                }
+                @include responsive($phone) {
+                    right: 0px;
+                }
+                @include responsive($desktop) {
+                    right: 0px;
+                } 
+                  
+            }
+            .owl-prev {
+                background-image: url("././img/prev.png");
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 30%;
+                left: -60px;
+                height: 50px;
+                width: 40px;
+                border: none;
+                &:hover{
+                    background-color: white;
+                    opacity: 0.5;
+                }
+                @include responsive($tablet) {
+                    left: 0px;
+                }
+                @include responsive($desktop-lg) {
+                    left: 0px;
+                }
+                @include responsive($phone) {
+                    left: 0px;
+                }
+                @include responsive($desktop) {
+                    left: 0px;
+                } 
+            }
+        }
+    }
+}
+.clientes-vip{
+    .mid-circle{
+        height: 95px;
+        width: 95px;
+        background-image: url("././img/star-vip.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        border: none !important;
+    }
+    .boxed-btn{
+        padding:8px 12px;
+        font-size: 16px;
+    }
+}

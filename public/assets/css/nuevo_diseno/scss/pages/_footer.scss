@@ -1,0 +1,345 @@
+.top-footer{
+    background-image: url("././img/top-footer.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: -100px;
+    z-index: 30;
+  }
+  footer{
+      background: #1f1f1f;
+      position: relative;
+      padding-top: 30px;
+      .cont-footer{
+        position: relative;
+        padding-bottom: 30px;
+        .dots-circle-footer-top-right{
+            right:0px;
+            top: 530px;
+            @include responsive($desktop) {
+                
+                right:0px;
+                width: 74px;
+                height: 74px;
+            }
+            @include responsive($tablet-landscape) {
+                
+                right:0px;
+                width: 74px;
+                height: 74px;
+            }
+            @include responsive($tablet) {
+                
+                right:0px;
+                width: 74px;
+                height: 74px;
+            }
+            @include responsive($phone) {
+                
+                right:0px;
+                width: 74px;
+                height: 74px;
+            }
+        }
+      }
+      h1 {
+        width: 100%;
+        text-align: center;
+        color: $green;
+        font-size: 40px;
+        font-weight: 200;
+        @include responsive($phone) {
+            font-size: 32px;
+        }
+        
+    }
+      h2 {
+        color: $gray;
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+        
+    }
+    h3 {
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 25px;
+        span{
+            color: $green;
+        }
+    }
+    span {
+        color: $orange;
+        font-weight: 400;
+        text-align: center;
+    }
+    p{
+        color: white;
+    }
+  }
+  .footer-icons{
+
+      margin-top: 40px;
+      width: 100%;
+      h3{
+          font-size: 18px;
+          color: white;
+      }
+  }
+  .footer-icon{
+      width: 20%;
+      float:left;
+      padding: 20px;
+      padding-bottom: 20px;
+      img{
+        width: 100px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    @include responsive($tablet) {
+        width: 33%;
+    }
+    @include responsive($phone) {
+        width: 45%;
+    }
+  }
+  .enlaces-footer{
+      border-top: 2px solid $gray;
+      padding-top: 20px;
+      margin-top: 10px;
+      h2{
+          color: $orange;
+          text-align: left;
+          font-size: 18px;
+          font-weight: 600;
+          
+        @include responsive($tablet) {
+            text-align: center;
+        }
+          
+      }
+      ul{
+          margin-left: 0px;
+          padding-left: 0px;
+          li{
+              text-align: left;
+              list-style: none;
+              padding: 5px 0px;
+              a{
+                padding: 10px 5px;
+                color: $gray;
+                text-align: left;
+                font-size: 18px;
+                display: block;
+                &:hover{
+                    color:white;
+                    cursor: pointer;
+                }
+                @include responsive($tablet) {
+                    text-align: center;
+                    border-bottom: 1px solid #333;
+                }
+              }
+          }
+      }
+  }
+  .extras-footer{
+      margin-top: 20px;
+    h1{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Quicksand";
+        margin-bottom: 20px;
+        color: white;
+        @include responsive($phone) {
+            text-align: center;
+        }
+        @include responsive($tablet) {
+            text-align: center;
+        }
+    }
+    h2{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 200;
+        margin-bottom: 20px;
+        @include responsive($phone) {
+            text-align: center;
+        }
+        @include responsive($tablet) {
+            text-align: center;
+        }
+    }
+    p{
+        color: $green;
+        font-size: 18px;
+        text-align: left;
+        margin: 3px 0px;
+        @include responsive($phone) {
+            text-align: center;
+        }
+        @include responsive($tablet) {
+            text-align: center;
+        }
+    }
+    img{
+        
+        display: block;
+        margin:0 auto;
+        margin-bottom: 20px;
+    }
+    ul{
+        text-align: left;
+        li{
+            list-style: none;
+            float: left;
+            margin-right: 15px;
+            @include responsive($tablet-landscape) {
+                margin-right: 10px;
+            }
+            a{
+                height: 50px;
+                width: 50px;
+                display: block;
+            }
+            .social-yt{
+                background-image: url("././img/icon-youtube.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                @include responsive($desktop-lg-m) {
+                    height: 35px;
+                    width: 35px;
+                }
+                @include responsive($desktop-lg) {
+                    height: 35px;
+                    width: 35px;
+                }
+                @include responsive($desktop) {
+                    height: 25px;
+                    width: 25px;
+                }
+                @include responsive($tablet-landscape) {
+                    height: 24px;
+                    width: 24px;
+                }
+                
+                
+            }
+            .social-fb{
+                background-image: url("././img/icon-fb.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                @include responsive($desktop-lg-m) {
+                    height: 35px;
+                    width: 35px;
+                }
+                @include responsive($desktop-lg) {
+                    height: 35px;
+                    width: 35px;
+                }
+                @include responsive($desktop) {
+                    height: 25px;
+                    width: 25px;
+                }
+                @include responsive($tablet-landscape) {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+            .social-ig{
+                background-image: url("././img/icon-ig.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                
+                @include responsive($desktop-lg-m) {
+                    height: 35px;
+                    width: 35px;
+                }
+                @include responsive($desktop-lg) {
+                    height: 35px;
+                    width: 35px;
+                }
+                @include responsive($desktop) {
+                    height: 25px;
+                    width: 25px;
+                }
+                @include responsive($tablet-landscape) {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+        @include responsive($tablet) {
+            text-align: center;
+            margin-left: 28%;
+        }
+        @include responsive($phone) {
+            display: block;
+            margin-left: 23%;
+        }
+    }
+  }
+  .sub-footer{
+      background: $orange;
+      padding: 10px 0px;
+      p{
+          color: white;
+          margin:0px;
+      }
+      a{
+        float: right;
+        color:white;
+        font-weight: 500;
+        margin-left: 10px;
+        &:first-child{
+            border-left: 2px solid white;
+            padding-left: 10px;
+            @include responsive($desktop) {
+                border-left: none;
+                padding-left: 0px;
+            }
+            @include responsive($tablet-landscape) {
+                border-left: none;
+                padding-left: 0px;
+            }
+            @include responsive($tablet) {
+                border-left: none;
+                padding-left: 0px;
+            }
+            @include responsive($phone) {
+                border-left: none;
+                padding-left: 0px;
+            }
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+        @include responsive($desktop) {
+        text-align: center;
+        float: unset;
+        }
+        @include responsive($tablet-landscape) {
+            text-align: center;
+        float: unset;
+        }
+        @include responsive($tablet) {
+        text-align: center;
+        float: unset;
+        }
+        @include responsive($phone) {
+            text-align: center;
+        float: unset;
+        }
+      }
+  }

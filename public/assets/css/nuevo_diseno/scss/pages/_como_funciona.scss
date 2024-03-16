@@ -1,0 +1,335 @@
+.flyer_video_area{
+    display:block;
+    margin-bottom: 50px;
+    h1{
+        margin-top: 200px;
+        text-align: left;
+        @include responsive($phone) {
+            margin-top: 100px;
+        }
+        @include responsive($tablet) {
+            margin-top: 100px;
+        }
+    }
+    p{
+        text-align: left;
+    }
+    .cont-flyer{
+        display:table-cell;
+        vertical-align: middle;
+    }
+    .bg-video-flyer{
+        background-image: url("././img/bg-video-flyer.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        height: 550px;
+        width: 550px;
+        margin:20px 0px;
+        iframe{
+            @include responsive($tablet-landscape) {
+                height: 300px;
+                margin-top: 125px;
+            }
+            @include responsive($tablet) {
+                height: 300px;
+                margin-top: 125px;
+            }
+            @include responsive($phone) {
+                height: 300px;
+                margin-top: 125px;
+            }
+        }
+    }
+    .video-yt-flyer{
+        background: black;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        border-radius: 35px;
+        height: 405px;
+        margin-top: 72px;
+        width: 100%;
+    }
+    .flyer-container{
+        position: relative;
+        .dots-circle{
+            bottom:-10px;
+        }
+    }
+}
+
+
+.personaliza_area{
+    margin-bottom:80px;
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        width: 100%;
+    }
+}
+
+.plantilla_area{
+    p{
+        display: block;
+    }
+    margin-bottom: 80PX;
+    .plantilla-opc{
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.info_area{
+    position: relative;
+    margin-bottom: 120px;
+    .owl-item {
+        margin-right: 30px !important;
+    }
+    .info-opc {
+        margin:20px 10px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        border-radius: 35px;
+        box-shadow: 0 10px 12px 0 rgba(88, 88, 88, 0.2),0 1px 5px 0 rgba(97, 97, 97, 0.19) !important;
+    }
+    h2{
+        text-align: left;
+    }
+    p{
+        text-align: left;
+    }
+    .info-text-cont{
+        padding:25px;
+        padding-top: 10px;
+    }
+    .owl-carousel {
+        .owl-nav {
+            div {
+                background: transparent;
+                height: 40px;
+                left: 0px;
+                text-align: center;
+                -webkit-transform: translateY(0%);
+                -ms-transform: translateY(0%);
+                transform: translateY(0%);
+                width: 40px;
+                color: #919191;
+                background-color: transparent;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                font-size: 15px;
+                line-height: 40px;
+                border: 1px solid #EEEEEE;
+                left: auto;
+                left: auto;
+                top: -100px;
+                right: 55px;
+                
+            }
+            .owl-next {
+                background-image: url("././img/next.png");
+                background-repeat: no-repeat;
+                position: absolute;
+                height: 50px;
+                width: 40px;
+                top: 40%;
+                right: -60px;
+                border: none;
+                
+                &:hover{
+                    background-color: white;
+                    opacity: 0.5;
+                }
+                @include responsive($tablet-landscape) {
+                    right:0px;
+                    top:50%;
+                }
+                @include responsive($tablet) {
+                    right:0px;
+                    top:50%;
+                }
+                @include responsive($phone) {
+                    right:0px;
+                    top:50%;
+                }
+                  
+            }
+            .owl-prev {
+                background-image: url("././img/prev.png");
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 40%;
+                left: -60px;
+                height: 50px;
+                width: 40px;
+                border: none;
+                &:hover{
+                    background-color: white;
+                    opacity: 0.5;
+                }
+                @include responsive($tablet-landscape) {
+                    left:0px;
+                    top:50%;
+                }
+                @include responsive($tablet) {
+                    left:0px;
+                    top:50%;
+                }
+                @include responsive($phone) {
+                    left:0px;
+                    top:50%;
+                }
+            }
+        }
+    }
+}
+
+.flyer_img_area{
+    position: relative;
+    margin-bottom: 120px;
+    .separador1{
+        background-position: left;
+        @include responsive($tablet-landscape) {
+            background-position: center;
+        }
+        @include responsive($tablet) {
+            background-position: center;
+        }
+        @include responsive($phone) {
+            background-position: center;
+        } 
+    }
+    .boton-solo{
+        @include responsive($tablet-landscape) {
+            text-align: center !important;
+        }
+        @include responsive($tablet) {
+            text-align: center !important;
+        }
+        @include responsive($phone) {
+            text-align: center !important;
+        } 
+    }
+    h1{
+        text-align: left;
+        @include responsive($tablet-landscape) {
+            text-align: center;
+            margin-top: 20px;
+        }
+        @include responsive($tablet) {
+            text-align: center;
+            margin-top: 20px;
+        }
+        @include responsive($phone) {
+            text-align: center;
+            margin-top: 20px;
+        } 
+    }
+    p{
+        text-align: left;
+        @include responsive($tablet-landscape) {
+            text-align: center;
+            margin-top: 10px;
+        }
+        @include responsive($tablet) {
+            text-align: center;
+            margin-top: 10px;
+        }
+        @include responsive($phone) {
+            text-align: center;
+            margin-top: 10px;
+        } 
+    }
+  }
+
+  .dudas_area{
+    min-height: 680px;
+    padding-top: 50px;
+    margin-bottom:-120px;
+    //padding-bottom: 150px;
+    position: relative;
+    //background: linear-gradient(0deg, $green 80%, #ffffff 50%);
+    background-image: url("././img/bg-splash-green.png");
+    background-repeat: repeat-x;
+    background-position: top;
+    .boxed-btn{
+        &:hover{
+            background-color: white;
+            color: $green;
+        }
+    }
+    .bg-img-flyer{
+        position:relative;
+        img{
+            position: absolute;
+            bottom:-200px;
+            left:0px;
+            @include responsive($desktop-lg-m) {
+                bottom:-50px;
+            }
+            @include responsive($desktop-lg) {
+                bottom:-50px !important;
+            }
+            @include responsive($desktop) {
+                bottom:0px;
+            }
+            @include responsive($tablet-landscape) {
+                bottom:-120px;
+                height: 400px;
+            }
+            @include responsive($phone) {
+                height: 400px;
+                left: 10px;
+            }
+            
+        }
+        @include responsive($tablet) {
+            height: 400px;
+        }
+        @include responsive($phone) {
+            height: 400px;
+        }
+
+    }
+    .separador1{
+        background-position: left;
+    }
+    h1{
+        font-size: 50px;
+        margin-top: 290px;
+        text-align: left;
+        color: white;
+        @include responsive($tablet-landscape) {
+            margin-top: 240px;
+            text-align: center;
+        }
+    }
+    p{
+        text-align: left;
+        color: white;
+        font-size: 32px;
+        margin-bottom: 20px;
+        @include responsive($tablet-landscape) {
+            text-align: center;
+        }
+    }
+    .separador2{
+        background-position: left;
+        @include responsive($tablet-landscape) {
+            background-position: center;
+        }
+    }
+    .boton-solo{
+        @include responsive($tablet-landscape) {
+            text-align: center !important;
+        }
+        
+    }
+  }

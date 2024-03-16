@@ -1,0 +1,105 @@
+@page {
+	margin: 1.6cm;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.cf:before,.cf:after{content:"";display:table}.cf:after{clear:both}.cf{*zoom:1}
+
+body {
+	padding-top: 3.5cm;
+	font-size: 14px;
+}
+
+.verde {
+	color: #44d705;
+}
+
+#header,
+#footer {
+  position: fixed;
+  left: 0;
+	right: 0;
+	color: #000;
+	font-size: 0.9em;
+}
+
+#header {
+  top: 0;
+	border-bottom: 0.3pt dashed #0a749d;
+	padding-bottom: 0.5cm;
+}
+
+#footer {
+  bottom: 0;
+  border-top: 0.3pt solid #aaa;
+}
+
+#header table,
+#footer table {
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+}
+
+#header td,
+#footer td {
+  padding: 0;
+	width: 50%;
+}
+
+.page-number {
+  text-align: center;
+}
+
+.page-number:before {
+  content: "Page " counter(page);
+}
+
+hr {
+  page-break-after: always;
+  border: 0;
+}
+
+table tr td p:last-child {
+	margin-bottom: 0;
+}
+
+fieldset {
+	border: 0.3pt dashed #0a749d;
+	margin-bottom: 0.75cm;
+	padding: 0.5cm;
+}
+
+legend {
+	font-weight: bold;
+	color: #0a749d;
+}
+
+#carrito th {
+	border-bottom: solid 1px #CCC;
+	background: #EEE;
+	line-height: 2;
+	vertical-align: middle;
+}
+
+#carrito {
+	margin-top:0.4cm;
+	
+}
+
+#carrito tbody td {
+	border-bottom: solid 1px #DDD;
+	padding-top: 0.2cm;
+	padding-bottom: 0.2cm;
+}
+
+#info td {
+	text-align: right;
+	padding: 0.1cm 0.3cm;
+}
+
+#info th {
+	text-align: left;
+	color: #0a749d;
+	padding: 0.1cm 0.3cm;
+}

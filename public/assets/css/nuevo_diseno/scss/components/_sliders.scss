@@ -1,0 +1,165 @@
+
+  //version1 slider (BOXED)
+  .text-slider-top{
+	margin-top: 120px;
+}
+.slider_area{
+  position: relative;
+  .single_slider {
+	  background-repeat: no-repeat;
+	  background-size: contain !important;
+	  max-width: 1400px;
+	  height: 510px;
+	  width: 100%;
+	  padding-bottom: 30px;
+	  background-size: auto;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	  margin-right: auto;
+	  margin-left: auto;
+	  background-position: right center;
+	  @include responsive($tablet) {
+		  height: 420px;
+		  background-position: center center !important;
+	  }
+	  @include responsive($phone) {
+		  height: 420px;
+		  background-position: center center !important;
+	  }
+	  .slider_text {
+		  h1 {
+			  text-align: left;
+			  font-size: 60px;
+			  text-shadow: 1px 1px 2px white;
+			  @include responsive($tablet) {
+				  font-size: 30px;
+			  }
+			  @include responsive($phone) {
+				  font-size: 30px;
+			  }
+		  }
+		  p{
+			  text-shadow: 1px 1px 2px white;
+			  font-size: 18px;
+			  font-weight: 400;
+			  color: #727272;
+			  margin-bottom: 20px;
+			  margin-top: 10px;
+			  text-align: left;
+		  }
+	  }
+		
+  }
+  .left-slider{
+	  background-position: left center;
+  }
+  .boxed-btn{
+	  &:hover{
+		  background-color: $green;
+		  color: white;
+	  }
+  }
+}
+
+//version1 slider (FULL)
+.slider_areav2{
+  position: relative;
+  .single_slider {
+	  height: 700px;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  padding-bottom: 30px;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	  margin-right: auto;
+	  margin-left: auto;
+	  background-position: center center;
+	  @include responsive($tablet-landscape) {
+		  height: 400px;
+		  background-position: center center !important;
+	  }
+	  @include responsive($tablet) {
+		  height: 320px;
+		  background-position: center center !important;
+	  }
+	  @include responsive($phone) {
+		  height: 220px;
+		  background-position: center center !important;
+	  }
+	  .slider_text {
+		  h1 {
+			  text-align: center;
+			  color:white;
+			  font-size: 70px;
+			  text-shadow: 1px 1px 2px rgb(59, 59, 59);
+			  @include responsive($tablet-landscape) {
+				  font-size: 25px;
+			  }
+			  @include responsive($tablet) {
+				  font-size: 28;
+			  }
+			  @include responsive($phone) {
+				  font-size: 18px;
+			  }
+		  }
+		  p{
+			  font-size: 18px;
+			  font-weight: 400;
+			  color: #d6d6d6;
+			  text-shadow: 1px 1px 2px rgb(59, 59, 59);
+			  text-align: center;
+			  margin-bottom: 20px;
+			  margin-top: 10px;
+		  }
+	  }
+		
+  }
+  .left-slider{
+	  background-position: left !important;
+  }
+  .single_slider2 {
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	  max-width: 1400px;
+	  height: 510px;
+	  width: 100%;
+	  padding-bottom: 30px;
+	  background-size: auto;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	  margin-right: auto;
+	  margin-left: auto;
+	  background-position: center center;
+	  @include responsive($tablet) {
+		  height: 420px;
+	  }
+	  .slider_text {
+		  h1 {
+			  text-align: left;
+			  font-size: 60px;
+			  text-shadow: 1px 1px 2px white;
+			  @include responsive($tablet) {
+				  font-size: 30px;
+			  }
+			  @include responsive($phone) {
+				  font-size: 30px;
+			  }
+		  }
+		  p{
+			  font-size: 18px;
+			  font-weight: 400;
+			  color: #727272;
+			  margin-bottom: 20px;
+			  margin-top: 10px;
+			  text-align: left;
+		  }
+	  }
+		
+  }
+  .boxed-btn{
+	  &:hover{
+		  background-color: $green;
+		  color: white;
+	  }
+  }
+}

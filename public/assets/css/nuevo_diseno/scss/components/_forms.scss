@@ -1,0 +1,279 @@
+
+//FORMS
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #999;
+  }
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 35px;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 18px;
+    &:focus{
+        border: 2px solid $green;
+        outline:none !important;
+        outline-width: 0 !important;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+input[type=text]{
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 35px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    &:focus{
+        border: 2px solid $green;
+        outline:none !important;
+        outline-width: 0 !important;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background: #ff4b00;
+    padding: 9px 35px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    &:hover{
+        background-color: $green;
+        color: white;
+    }
+  }
+  
+
+/*ESTILO ESPECIAL PARA INPUT RANGE YA QUE LOS NAVEGADORES INTERPRETAN ESTOS ELEMENTOS*/
+
+  input[type='range'] {
+    -webkit-appearance: none;
+    background-color: white;
+    height: 20px;
+    border-radius: 10px;
+    border:1px solid #d8d8d8;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 20px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #d8d8d8;
+    border-radius: 50%;
+    box-shadow: -2510px 0 0 2500px $green;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+  
+  input[type='range']::-moz-range-thumb {
+    background: #d8d8d8;
+    border-radius: 50%;
+    box-shadow: -2010px 0 0 2000px $green;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border: 0;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    background-color: white;
+  }
+  input[type="range"]::-moz-range-progress {
+    background-color: $green;
+    height: 20px
+  }
+  input[type="range"]::-ms-fill-upper {
+    background-color: #d8d8d8;
+  }
+  input[type="range"]::-ms-fill-lower {
+    background-color: $green;
+  }
+
+
+
+
+  
+  
+  .input_search{
+    background-image: url("././img/search.png");
+    background-position: right; 
+    background-repeat: no-repeat;
+    padding-right: 55px !important;
+    border: 2px solid $green !important;
+    &:focus{
+        border: 2px solid #81b801 !important;
+    }
+    @include responsive($tablet) {
+        margin-top: 10px;
+    }
+    
+  }
+
+  
+  label {
+    cursor: pointer;
+    color: $gray;
+    display: block;
+    margin: 3px;
+    }
+    input[type="file"] {
+        display: none;
+    }
+    .custom-file-upload {
+        width: 100%;
+        height: 50px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid $green;
+        border-radius: 35px;
+        font-size: 16px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        &:focus{
+            border: 2px solid $orange;
+            outline:none !important;
+            outline-width: 0 !important;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+    }
+  select {
+    margin-bottom: 20px;
+    color: rgb(88, 88, 88);
+    font-size: 22px;
+    background: transparent;
+    background-image: url("././img/select-arrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 19px;
+    border:2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    // A reset of styles, including removing the default dropdown arrow
+    appearance: none;
+    background-color: transparent;
+    width: 100%;
+    font-family: inherit;   
+    padding-right: 40px;
+    padding-left: 20px;
+    border:2px solid $green;
+    cursor: pointer;
+  
+    // Stack above custom arrow
+    z-index: 1;
+  
+    // Remove dropdown arrow in IE10 & IE11
+    // @link https://www.filamentgroup.com/lab/select-css.html
+    &::-ms-expand {
+      display: none;
+    }
+    &:hover{
+        opacity: 0.7;
+    }
+  
+    // Remove focus outline, will add on alternate element
+    outline: none;
+  }
+
+  /* The container */
+  .cont_option {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .cont_option{
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    color: $gray;
+    &:hover{
+        color: $green;
+    }
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $green;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .cont_option:hover input ~ .checkmark {
+    opacity: 0.8;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .cont_option input:checked ~ .checkmark {
+    background-color: $green;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .cont_option input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .cont_option .checkmark:after {
+       top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+      
+  }

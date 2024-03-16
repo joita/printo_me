@@ -1,0 +1,36 @@
+// variables, mixins and colors
+@import "utils/mixins"; // main mixins
+@import "utils/colors"; // colors variables
+@import "utils/variables"; // other variables
+@import "utils/responsive"; // responsive
+
+// Default
+@import "base/default"; // Estilos por defecto
+
+//Pages
+@import "pages/header"; // header
+@import "pages/home"; // index
+@import "pages/footer"; // footer
+@import "pages/como_funciona"; // como funciona
+@import "pages/empresas"; // empresas
+@import "pages/testimoniales"; // testimoniales
+@import "pages/single_blog"; // blog single
+@import "pages/influencers"; // para creadores e influencers
+@import "pages/comprar"; // comprar
+@import "pages/blog"; // blog
+@import "pages/tiendas"; // tiendas
+@import "pages/tienda_creador"; // tienda de creadores
+@import "pages/quienes_somos"; // quiens somos
+@import "pages/plantillas"; // plantillas
+@import "pages/ficha_producto"; // ficha del producto
+@import "pages/herramienta"; // herramienta de personalización
+@import "pages/proceso_compra"; // primer pantalla proceso de compra
+@import "pages/carrito"; // proceso de ocmpra - carrito
+@import "pages/datos_envio"; // proceso de compra - datos de envio
+@import "pages/metodo_pago"; // metodos de pago - datos de envio
+
+// Components
+@import "components/buttons"; // botones
+@import "components/generales"; // clases utilizadas en varias plantillas
+@import "components/sliders"; // clases para sliders
+@import "components/forms"; // elementos de form

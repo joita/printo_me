@@ -1,0 +1,179 @@
+/*Inicio*/
+#sliderhome{
+    padding:0px;
+}
+.contenido-banner .texto-principal {
+    color: #ff4d00;
+}
+.contenido-banner {
+    position: absolute;
+    z-index: 9999;
+    margin: 10px;
+    text-align: center;
+    top: 50%;
+}
+.fondo-inicio{
+    background: #ffffff87;
+}
+/*Fin inicio*/
+/*Inicio admin pedidos*/
+#subnav-productos {
+    margin-top: 15px;
+}
+#descarga_pedidos{
+    margin-top: 5px
+}
+#fecha_inicio,#fecha_final {
+    background: #DDDDDD;
+    border: 0px;
+}
+/*Fin admin pedidos*/
+/*Admin creadores inicio*/
+.creador {
+    display: flex;
+    align-items: center;
+}
+.creador img{
+    display: block;
+    margin:auto;
+}
+.btn-new{
+    margin-left: 10px;
+}
+#logocreador {
+    padding: 0.5rem 1rem;
+    border-left: dashed 1px #0A749E;
+}
+/*Fin admin creadores inicio*/
+/*Inicio admin tiendas*/
+#campanas{
+    display: inline-block;
+    overflow: scroll;
+}
+#table-tienda #campanas a.action.button {
+    padding: 10px 10px !important;
+}
+#tiendas,#vip{
+    border: 0px;
+}
+#logotienda {
+    text-align: center;
+}
+#logotienda img {
+    width: 80% !important;
+    display: inline-block;
+}
+#vip .tienda {
+    padding: 48px !important;
+}
+#vip #grabber {
+    border-right: dashed 1px #0A749E;
+}
+#save-metodo {
+    width: 10%;
+    margin-left: 5px;
+    padding: 0px;
+}
+#metodo {
+    width: 80%;
+}
+.inline{
+    display: inline-block;
+}
+.msj-success.activo p {
+    margin: 0px;
+    color: green;
+
+}
+.msj-success.activo {
+    border-radius: 5px;
+    text-align: center;
+    background: #beffbe;
+}
+
+.msj-success{
+    transition: .1s all ;
+}
+/*Fin admin tiendas*/
+/*Inicio wow winners*/
+#wow_list #grabber {
+    border-right: dashed 1px #0A749E;
+    padding: 1.2rem 1rem;
+}
+#wow_list #datos_foto{
+    border-right: dashed 1px #0A749E;
+    padding-bottom: 1.7em;
+}
+/*Fin wow winners*/
+/* Inicio tienda cliente*/
+.slide-img input {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.cont-img img {
+    height: 150px;
+    width: auto;
+}
+.cont-img {
+    text-align: center;
+}
+.eliminar-btn {
+    color: #9a8f8f;
+    float: right;
+    margin-bottom: 2px !important;
+    margin-top: 0px !important;
+    padding: 5px !important;
+    cursor: pointer;
+}
+.slide-img input {
+    background: white;
+}
+#tiendaSlider {
+    border-radius: 20px;
+}
+.titulo-tienda {
+    font-family: "Quicksand";
+    color: #025573;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.sin-img {
+    background-image: url(/assets/images/sin-imagen.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 150px;
+    background-position: center;
+    margin-top: 36px;
+}
+/* Fin tienda cliente*/
+/*Metodo pago*/
+.saldazo {
+    color: black;
+    font-size: 0.6em !important;
+}
+/*Fin metodo pago*/
+/*Inicio cargos extra*/
+.btn-eliminar {
+    background: #ff0505;
+    padding: 0px 15px;
+    margin: 0px;
+}
+.btn-eliminar:hover {
+    background: #d00404d4 !important;
+}
+.disabled.btn-eliminar:hover, .disabled.btn-eliminar:focus {
+    background: #cecececf !important;
+}
+
+.disabled.btn-eliminar {
+    background: #cecececf;
+}
+
+#dg-products div#contender10-33, #dg-products div#contender10-37 {
+
+    display: none !important;
+
+}
+/*Fin cargos extra*/

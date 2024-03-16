@@ -1,0 +1,126 @@
+.blog_area{
+    margin-top:30px;
+    margin-bottom:30px;
+    h1{
+        text-align: left;
+        margin-top: 20px;
+        @include responsive($tablet) {
+            text-align: center;
+        }
+        @include responsive($phone) {
+            text-align: center;
+        }
+    }
+    .separador1{
+        background-position: left;
+        @include responsive($tablet) {
+            background-position: center;
+        }
+        @include responsive($phone) {
+            background-position: center;
+        }
+    }
+    p{
+        text-align: left;
+    }
+    .cont-blog{
+        color: $gray;
+        p{
+            text-align: left;
+        }
+        a{
+            color: $orange;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        h2{
+            text-align: left;
+            font-family: 'Fredoka One', cursive;
+            font-size: 26px;
+        }
+    }
+    
+    
+}
+.sidebar-right{
+    @include responsive($phone) {
+        padding-top: 50px;
+    }
+    @include responsive($tablet) {
+        padding-top: 50px;
+    }
+    h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .posts-sb{
+        border-bottom: 1px solid #D8D8D8;
+        padding-bottom: 30px;
+        .post-sb{
+            margin-top: 20px;
+            .img-post{
+                float: left;
+                margin-right: 5%;
+                width: 30%;
+                img{
+                    margin-top: 5px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    border-radius: 20px;
+                }
+            }
+            .cont-post{
+                float: left;
+                width: 65%;
+                h2{
+                    text-align: left;
+                    font-size: 18px;
+                    margin: 1px 0px;
+                }
+                p{
+                    margin: 5px 0px;
+                    font-size: 14px;
+                }
+                a{
+                    color: $green;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                
+            }
+        }
+    }
+    .flyer-sb{
+        position: relative;
+        margin:10px;
+        background-image: url("././img/img-flyer-sb.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 630px;
+        padding: 10px 10px;
+        h1{
+            text-align: center;
+            font-size: 36px;
+            @include responsive($phone) {
+                font-size: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            @include responsive($tablet) {
+                font-size: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        .boxed-btn{
+            position: absolute;
+            bottom:30px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    }
+    
+}

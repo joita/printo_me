@@ -1,0 +1,413 @@
+
+.full-image-area{
+    background-image: url("././img/full-image-area.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.dots-triangle{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-image: url("././img/dots-footer.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 375px;
+    height: 344px;
+    @include responsive($tablet-landscape) { 
+        width: 200px;
+        height: 180px;
+    }
+    @include responsive($tablet) { 
+        width: 200px;
+        height: 180px;
+    }
+    @include responsive($phone) {
+        width: 200px;
+        height: 180px;
+    }
+}
+.dots-circle-bottom-left{
+    position: absolute;
+    bottom:-100px;
+    left:-50px;
+    background-image: url("././img/dots-destacados.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 174px;
+    height: 174px;
+    @include responsive($tablet-landscape) {
+        bottom:0px;
+        left:0px;
+        width: 74px;
+        height: 74px;
+    }
+    @include responsive($tablet) {
+        bottom:0px;
+        left:0px;
+        width: 74px;
+        height: 74px;
+    }
+    @include responsive($phone) {
+        bottom:0px;
+        left:0px;
+        width: 74px;
+        height: 74px;
+    }
+}
+.bg-green-circle-bottom-right{
+    position: absolute;
+    bottom:-100px;
+    right:-90px;
+    background-image: url("././img/bg-green-circle.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    @include responsive($tablet-landscape) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+    @include responsive($tablet) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+    @include responsive($phone) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+}
+.dots-circle-top-right{
+    position: absolute;
+    top:-100px;
+    right:-50px;
+    background-image: url("././img/dots-destacados.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 174px;
+    height: 174px;
+    @include responsive($tablet) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+    @include responsive($phone) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+}
+.dots-circle-footer-top-right{
+    position: absolute;
+    top:50px;
+    right:0px;
+    background-image: url("././img/dots-circle-footer.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 142px;
+    height: 142px;
+    @include responsive($desktop) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+    @include responsive($tablet-landscape) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+    @include responsive($tablet) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+    @include responsive($phone) {
+        bottom:0px;
+        right:0px;
+        width: 74px;
+        height: 74px;
+    }
+}
+.separador1{
+    background-image: url("././img/separador1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .separador1-left{
+    background-image: url("././img/separador1.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .separador2{
+    background-image: url("././img/separador2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .separador3{
+    background-image: url("././img/separador3.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+.infoimage-left{
+    margin-top: 140px;
+    margin-bottom: 50px;
+    img{
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+    .boton-solo{
+        @include responsive($tablet) {
+            text-align: center !important;
+        }
+    }
+    
+    h1{
+        text-align: left !important;
+        @include responsive($tablet) {
+            text-align: center !important;
+        }
+        @include responsive($phone) {
+            text-align: center !important;
+        }
+
+    }
+    p{
+        text-align: left !important;
+        @include responsive($tablet-landscape) {
+            text-align: center !important;
+        }
+        @include responsive($tablet) {
+            text-align: center !important;
+        }
+        @include responsive($phone) {
+            text-align: center !important;
+        }
+    }
+    .separador1{
+        background-position: left;
+        @include responsive($tablet-landscape) {
+            background-position: center;
+        }
+    }
+}
+.infoimage-right{
+    margin-top: 140px;
+    margin-bottom: 50px;
+    img{
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+    h1{
+        text-align: right !important;
+    }
+    p{
+        text-align: right !important;
+    }
+    .separador1{
+        background-position: right;
+    }
+}
+.infoimage-center{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    img{
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+    h1{
+        text-align: center !important;
+    }
+    p{
+        text-align: center !important;
+    }
+    .separador1{
+        background-position: center;
+    }
+}
+
+.clear{
+    clear: both;
+}
+.checked{
+    color: $green;
+}
+
+
+//paginacion
+.pagnav{
+    position: relative;
+    height: 100px;
+    .pagination {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        display: inline-block;
+        a{  
+            color: $gray;
+            font-size: 22px;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            &:hover{
+                color: $orange;
+            }
+            @include responsive($tablet) {
+                font-size: 18px;
+                padding: 8px 8px;
+            }
+            @include responsive($phone) {
+                font-size: 14px;
+                padding: 8px 8px;
+            }
+        }
+        .active {
+            color: $orange;
+        }
+    }
+}
+.margen-bottom{
+    padding-bottom: 120px;
+}
+.contenido-default{
+    padding:100px 0px;
+}
+.btn-normal{
+    display: unset;
+}
+
+.share{
+    height: 80px;
+    margin-bottom: 30px;
+    h2{
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    ul{
+        padding-inline-start: 10px;
+        text-align: left;
+        li{
+            list-style: none;
+            float: left;
+            margin-right: 25px;
+            a{
+                height: 50px;
+                width: 50px;
+                display: block;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .social-yt{
+                background-image: url("././img/yt-green.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                @include responsive($tablet) {
+                    height: 25px;
+                    width: 25px;
+                }
+                @include responsive($desktop) {
+                    height: 30px;
+                    width: 30px;
+                }
+                @include responsive($desktop-lg) {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            .social-fb{
+                background-image: url("././img/fb-green.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                @include responsive($tablet) {
+                    height: 25px;
+                    width: 25px;
+                }
+                @include responsive($desktop) {
+                    height: 30px;
+                    width: 30px;
+                }
+                @include responsive($desktop-lg) {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            .social-ig{
+                background-image: url("././img/ig-green.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                
+                @include responsive($tablet) {
+                    height: 25px;
+                    width: 25px;
+                }
+                @include responsive($desktop) {
+                    height: 30px;
+                    width: 30px;
+                }
+                @include responsive($desktop-lg) {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            .social-tw{
+                background-image: url("././img/tw-green.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                
+                @include responsive($tablet) {
+                    height: 25px;
+                    width: 25px;
+                }
+                @include responsive($desktop) {
+                    height: 30px;
+                    width: 30px;
+                }
+                @include responsive($desktop-lg) {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+        }
+    }
+}

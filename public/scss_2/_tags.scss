@@ -1,0 +1,82 @@
+.tagsinput {
+    background: $white;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    min-height: 84px;
+    overflow-y: auto;
+
+    span.tag {
+        border: 1px solid darken($verde-principal, 10%);
+        display: block;
+        float: left;
+        padding: 0;
+        text-decoration: none;
+        background: $verde-principal;
+        color: $white;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+        border-radius: 2px;
+
+        >span {
+            display: block;
+            float: left;
+            line-height: 1.6rem;
+            vertical-align: middle;
+            padding: 3px 4px 3px 7px;
+            margin: 0;
+            @include reg-shadow();
+        }
+
+        >a {
+            margin: 0;
+            display: block;
+            float: left;
+            line-height: 1.6rem;
+            width: 1.8rem;
+            padding: 3px 4px;
+            text-align: center;
+            font-weight: bold;
+            color: $white;
+            text-decoration:none;
+            font-size: 0.7rem;
+            @include reg-shadow();
+
+            &:hover, &:focus, &:active {
+                background: darken($verde-principal, 10%);
+            }
+        }
+    }
+
+    input {
+        width:auto;
+        margin:0px;
+        font-size: 0.9rem;
+        border:1px solid transparent;
+        padding:5px;
+        background: transparent;
+        color: #000;
+        outline:0px;
+        margin-right:5px;
+        margin-bottom:5px;
+    }
+
+    div {
+        display:block;
+        width: auto;
+        float: left;
+    }
+
+}
+
+.tags_clear {
+    clear: both;
+    width: 100%;
+    height: 0px;
+}
+
+.not_valid {
+    background: #FBD8DB !important;
+    color: #90111A !important;
+}

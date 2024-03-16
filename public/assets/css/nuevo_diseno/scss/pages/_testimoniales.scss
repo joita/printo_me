@@ -1,0 +1,66 @@
+.testimonios_area{
+    .testimonio{
+        margin-top:40px;
+    }
+    p{
+        text-align: left;
+    }
+    .user-image{
+        float: left;
+        width: 30%;
+        img{
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .user-name{
+        float: left;
+        width: 70%;
+        padding: 10px;
+        h2{
+            text-align: left;
+        }
+        
+    }
+    .user-stars{
+        margin-left: 0px;
+        margin-top:1px;
+        float: left;
+        width: 40%;
+    }
+    .user-date{
+        float:right;
+        color: #777;
+        font-size: 14px;
+    }
+    .pagnav{
+        position: relative;
+        height: 150px;
+        .pagination {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            text-align: center;
+            display: inline-block;
+            a{  
+                color: $gray;
+                font-size: 22px;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                &:hover{
+                    color: $orange;
+                }
+                
+            }
+            .active {
+                color: $orange;
+            }
+        }
+    }
+    
+    
+}

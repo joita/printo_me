@@ -1,0 +1,543 @@
+select {
+	background-position: right center;
+}
+
+body > iframe {
+	position: absolute !important;
+}
+
+.fondo-naranja {
+	background: $naranja-principal;
+}
+
+.fondo-verde {
+	background: $verde-principal;
+}
+
+#contenedor-video-banners {
+
+	#principal {
+		position: relative;
+		margin-bottom: 0.625rem;
+
+		@include breakpoint(medium) {
+			margin-bottom: 1.875rem;
+			margin-bottom: 0;
+		}
+		
+		.contenedor-imagen {		
+			@include breakpoint(medium) {
+				height: 100%;
+			}
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			@include reg-shadow();
+			
+			>a {
+				display: block;
+				@include breakpoint(medium) {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+				}
+			
+				>img {
+					width: 100%;
+					height: auto;
+					@include breakpoint(medium) {
+						opacity: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	.flex-video {
+		margin-bottom: 0;
+	}
+
+	.flex-video.widescreen {
+		padding-bottom: 56.25%;
+	}
+	
+	iframe {
+		border: none;
+	}
+	
+	margin-bottom: 0.625rem;
+	@include breakpoint(medium) {
+		margin-bottom: 1.375rem;
+	}
+
+	#video-principal {
+		margin-bottom: 0.625rem;
+
+		@include breakpoint(medium) {
+			margin-bottom: 1.875rem;
+			margin-bottom: 0;
+		}
+	}
+
+	#secundario-arriba, #secundario-abajo {
+		.flex-video.widescreen {
+			padding-bottom: 54.7%;
+		}
+	
+		@include breakpoint(small only) {
+			margin-bottom: 0.625rem;
+			@include breakpoint(landscape) {
+				width: 50%;
+				padding-top: 0.625rem;
+			}
+		}
+		
+		@include breakpoint(medium) {
+			height: 50%;
+		}
+		position: relative;
+		
+		.contenedor-imagen {
+			@include breakpoint(medium) {
+				position: absolute;
+			}
+			border: solid 1px $medium-gray;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			@include reg-shadow();
+			
+			>a {
+				display: block;
+				@include breakpoint(medium) {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+				}
+			
+				>img {
+					width: 100%;
+					height: auto;
+					@include breakpoint(medium) {
+						display: none;
+					}
+				}
+				
+				>span {
+					display: block;
+					position: absolute;
+					left: 0.625rem;
+					right: 0.625rem;
+					bottom: 0;
+					@include breakpoint(medium) {
+						bottom: -1px;
+						left: 0;
+						right: 0;
+					}
+					background: rgba($azul-mediano, 0.85);
+					font-size: 1rem;
+					line-height: 1.2rem;
+					padding: 0.55rem 0.5rem 0.45rem;
+					color: $white;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	#secundario-arriba {
+		@include breakpoint(small only) {
+			margin-bottom: 0;
+		}
+	
+		@include breakpoint(medium) {
+			padding-bottom: 0.8875rem;
+			
+			.contenedor-imagen {
+				top: 0;
+				left: 0.9375rem;
+				bottom: 0.9375rem;
+				right: 0.9375rem;
+			}
+		}
+	}
+
+	#secundario-abajo {
+		@include breakpoint(medium) {
+			padding-top: 0.8875rem;
+			
+			.contenedor-imagen {
+				top: 0.9375rem;
+				left: 0.9375rem;
+				bottom: 0;
+				right: 0.9375rem;
+			}
+		}
+	}
+}
+
+#pasos-colores {
+	position: relative;
+	margin-bottom: 0.625rem;
+	@include breakpoint(medium) {
+		margin-bottom: 1.875rem;
+	}
+	
+	img {
+		display: block;
+		max-width: 75%;
+		margin: 2rem auto;
+	}
+	
+	h4 {
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	.fondo-naranja {
+		h4 {
+			color: $verde-principal;
+		}
+	}
+	
+	.fondo-verde {
+		h4 {
+			color: $naranja-principal;
+		}
+	}
+	
+	.padded-container {
+		padding: 0.5rem 1.6rem;
+	}
+	
+	p, ol {
+		color: $white;
+		text-align: center;
+	}
+}
+
+#titulo-campanas {
+	background: $azul-mediano;
+	min-height: 30px;
+	border-radius: 4px;
+	margin-bottom: 0.625rem;
+	@include breakpoint(medium) {
+		margin-bottom: 1.875rem;
+	}
+	
+	#creemos, #comparte {
+		margin: 0;
+		padding: 0.925rem 1.25rem 0.825rem;
+		
+		@include breakpoint(medium) {
+			font-size: 1.35rem;
+			padding: 0.625rem 1.25rem 0.525rem;
+		}
+		@include breakpoint(large) {
+			font-size: 1.7rem;
+		}
+		@include breakpoint(xlarge) {
+			font-size: 1.9rem;
+		}
+		color: $white;
+		@include reg-shadow();
+	}
+	
+	#creemos {
+		@include breakpoint(small only) {
+			text-align: center;
+		}
+	}
+	
+	#comparte {
+		background: $naranja-principal;
+		@include reg-shadow();
+		border-radius: 0 0 4px 4px;
+		@include breakpoint(medium) {
+			border-radius: 0 4px 4px 0;
+		}
+		
+		>a {
+			display: block;
+			color: $white;
+			text-align: center;
+			font-weight: bold;
+		}
+	}
+}
+
+#textos-promocionales {
+	@include breakpoint(medium) {
+		margin-bottom: 1.875rem;
+	}
+	position: relative;
+	
+	.contenedor-promo {
+		@include breakpoint(medium down) {
+			margin-bottom: 1.875rem;
+		}
+		
+		img {
+			@include breakpoint(small only) {
+				margin-bottom: 0.625rem;
+			}
+		}
+	}
+	
+	.texto-promocional-centrado {
+		@include breakpoint(medium) {
+			display: table;
+			height: 100%;
+			
+			
+			&-interno {
+				display:table-cell;
+				vertical-align:middle;
+			}
+		}
+		
+		h4 {
+			color: $naranja-principal;
+			font-weight: bold;
+			@include breakpoint(small only) {
+				text-align: center;
+			}
+		}
+		
+		p {
+			font-size: 0.9rem;
+			line-height: 1.3;
+			margin-bottom: 0;
+			color: $notblack;
+		}
+	}
+}
+
+#pasos {
+	@include breakpoint(medium down) {
+		margin-bottom: 0.6rem;
+	}
+
+	@include breakpoint(large) {
+		margin-bottom: 1.875rem;
+	}
+
+	i {
+		@include breakpoint(medium down) {
+			line-height: 8rem;
+		}	
+		@include breakpoint(large) {
+			line-height: 12rem;
+		}
+		margin-bottom: 1rem;
+	}
+	
+	h3 {
+		font-weight: bold;
+	}
+	
+	#primer-paso, #segundo-paso, #tercer-paso {
+		@include breakpoint(medium down) {
+			margin-bottom: 1.25rem;
+		}
+	}
+
+	#primer-paso {
+		i {
+			@include breakpoint(medium down) {
+				font-size: 9rem;
+			}	
+			@include breakpoint(large) {
+				font-size: 13rem;
+			}
+			color: $naranja-principal;
+		}
+		
+		h3 {
+			color: $naranja-principal;
+		}
+	}
+	
+	#segundo-paso {
+		i {
+			@include breakpoint(medium down) {
+				font-size: 8.9rem;
+			}	
+			@include breakpoint(large) {
+				font-size: 12.9rem;
+			}
+			color: $azul-principal;
+		}
+		
+		h3 {
+			color: $azul-principal;
+		}
+	}
+	
+	#tercer-paso {
+		i {
+			@include breakpoint(medium down) {
+				font-size: 9.4rem;
+			}	
+			@include breakpoint(large) {
+				font-size: 13.4rem;
+			}
+			color: $verde-principal;
+		}
+		
+		h3 {
+			color: $verde-principal;
+		}
+	}
+	
+	p {
+		font-size: 1rem;
+		padding: 0 1rem;
+		color: $notblack;
+		text-align: justify;
+		line-height: 1.45;
+	}
+	
+	img {
+		width: 59%;
+		@include breakpoint(medium only) {
+			width: 33%;
+		}
+		margin-bottom: 1.3rem;
+	}
+}
+
+#testimonios {
+	@include breakpoint(medium down) {
+		margin-bottom: 0.6rem;
+	}
+
+	@include breakpoint(large) {
+		margin-bottom: 1.875rem;
+	}
+
+	
+	.testimonio-holder {
+
+		.testimonio {
+			padding: 0.5rem;
+			position: relative;
+			
+			&-contenedor {
+				background: $naranja-mediano;
+				color: $white;
+				@include reg-shadow();
+				padding: 0.95rem 1.2rem;
+				position: relative;
+				margin-bottom: 1rem;
+				
+				>p {
+					margin: 0;
+					padding: 0;
+					line-height: 1.4;
+					font-size: 1rem;
+				}
+				
+				&::after {
+					width: 0;
+					height: 0;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-top: 11px solid $naranja-mediano;
+					content: "";
+					display: block;
+					position: absolute;
+					bottom: -11px;
+					left: 50%;
+					margin-left: -10px; 
+				}
+			}
+			
+			&-nombre {
+				color: $azul-principal;
+				text-align: center;
+				display: block;
+				font-weight: bold;
+			}
+		}
+		
+		&:nth-child(2n) {
+			
+			.testimonio {
+				&-contenedor {
+					background: $naranja-principal;
+					
+					&::after { 
+						border-top: 11px solid $naranja-principal;
+					}
+				}
+				
+				&-nombre {
+					/* color: $verde-principal; */
+				}
+			}
+		}
+	}
+}	
+
+#instalaciones {
+	@include breakpoint(medium down) {
+		margin-bottom: 0.6rem;
+	}
+
+	@include breakpoint(large) {
+		margin-bottom: 1.875rem;
+	}
+
+	position: relative;
+}
+
+#ayuda {
+    font-size: 0.925rem;
+	
+	#left-help {
+		@include breakpoint(small only) {
+			margin-bottom: 1.5rem;
+		}
+	}
+	
+	.sticky {
+		@include breakpoint(small only) {
+			right: 10px;
+			left: 10px;
+		}
+	}
+	
+	#help-seguir {
+		border: solid 1px $verde-mediano;
+		background: lighten($verde-mediano, 33%);
+		padding: 1.3rem;
+		border-radius: 3px;
+		
+		a {
+			color: $verde-oscuro;
+		}
+	}
+}
+
+dl.faq {
+	
+	>dt {
+		color: $naranja-principal;
+		font-size: 1rem;
+	}
+	
+	>dt+dd {
+		margin-bottom: 2rem;
+	}
+}
+
+.subseccion-titulo {
+    font-size: 1.9rem;
+	margin-bottom: 1.25rem;
+	color: $azul-principal;
+}

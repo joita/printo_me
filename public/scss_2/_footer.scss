@@ -1,0 +1,151 @@
+#main-footer {
+	border-top: solid 3px $verde-principal;
+	background: $black url(./assets/nimages/footerbg.jpg) no-repeat center top;
+	background-size: cover;
+	min-height: 100px;
+	padding: 1rem 0;
+	@include breakpoint(medium) {
+		padding: 2rem 0;
+	}
+	@include breakpoint(large) {
+		padding: 3rem 0;
+	}
+	@include breakpoint(xlarge) {
+		padding: 4rem 0;
+	}
+
+	p {
+		font-size: 0.9rem;
+	}
+
+	#flogo {
+		margin-bottom: 1rem;
+	}
+
+	#ftelink {
+		color: $white;
+		font-size: 1.4rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+		display: inline-block;
+
+		>i {
+			margin-right: 0.8rem;
+		}
+	}
+
+	.samew {
+	    width: 1.2rem;
+	    text-align: center;
+	}
+
+	#whatslink {
+		color: $white;
+		&:hover {
+			color: $white;
+		}
+	}
+
+	h3 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	.fli {
+		margin-bottom: 0.8rem;
+
+		>a {
+			color: $white;
+
+			&::before {
+				content: "\f105";
+				font-family: "FontAwesome";
+				margin-right: 0.5rem;
+			}
+		}
+	}
+
+	#info-adicional {
+		@include breakpoint(medium down) {
+			margin-top: 1rem;
+		}
+	}
+
+	#nombre_contacto_footer, #email_contacto_footer, #mensaje_contacto_footer, #telefono_contacto_footer {
+		margin-bottom: 0;
+		border: none;
+		border-radius: 0 2px 2px 0;
+		background: $white;
+		box-shadow: none;
+	}
+
+	#contacto_button_footer {
+		background: $verde-principal;
+		color: $black;
+		font-weight: bold;
+		border-radius: 2px;
+
+		&:hover {
+			background: lighten($verde-principal, 10%);
+		}
+	}
+
+	#footsoc {
+		margin: 0 auto;
+		display: inline-block;
+		float: none;
+		width: auto;
+	}
+
+	#contfoot-area {
+		@include breakpoint(small only) {
+			margin-top: 1rem;
+		}
+	}
+}
+
+.input-group {
+	box-shadow: 0px 0px 5px darken($light-gray, 15%);
+	&-label {
+		background: $white;
+		border: none;
+		padding: 0;
+		border-radius: 2px 0 0 2px;
+		vertical-align: top;
+		>i {
+			width: 2.6rem;
+			display: block;
+			font-size: 1.2rem;
+			height: 1.875rem;
+			vertical-align: middle;
+			line-height: 1.875rem;
+			border-right: solid 1px $verde-principal;
+			text-align: center;
+		}
+	}
+
+	input, textarea, select {
+		margin-bottom: 0 !important;
+		border: none !important;
+		//border-radius: 0 2px 2px 0 !important;
+		background-color: $white;
+		box-shadow: none !important;
+	}
+
+	textarea {
+		line-height: 1.3;
+	}
+}
+
+.fneg {
+	background: $black;
+	border-bottom: solid 3px $verde-principal;
+	padding: 0.8rem 0;
+	font-size: 0.8rem;
+	color: $white;
+
+	a {
+		color: $white;
+	}
+}
